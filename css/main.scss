@@ -1,49 +1,26 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
+$color-1:       #4A68A4;
+$color-2:       #6589C0;
+$color-3:       #C3D5F0;
+$color-light:   #D9B81B;
+$color-dark:    #F07208;
 
+$gray-darkest:  #383838;
+$gray-darker:   #585858;
+$gray-normal:   #808080;
+$gray-light:    #A8A8A8;
+$gray-lighter:  #E8E8E8;
+$gray-lightest: #F8F8F8;
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
+$font-body:     'Roboto Slab', serif;
+$font-header:   'Lato', sans-serif;
+$font-script:   'Lobster', cursive;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+    "base",
+    "nav-site"
 ;

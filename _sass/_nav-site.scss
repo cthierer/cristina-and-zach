@@ -1,0 +1,27 @@
+
+#site-nav {
+    
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-1;
+    font-size: 1.2em;
+    padding: 10px;
+
+    .navbar-brand {
+        font-size: 2em;
+    }
+
+    a {
+
+        &,
+        &:link,
+        &:visited {
+            color: $gray-normal;
+        }
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}

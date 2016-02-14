@@ -1,0 +1,17 @@
+lookup:
+  home: 
+    title: Home 
+    link: /#
+  big-day: 
+    title: The big day 
+    link: /#the-big-day
+  story:
+    title: Our story 
+    link: /#our-story
+  registry: 
+    title: Registry 
+    link: /#registry
+main: 
+  - big-day 
+  - story 
+  - registry 
