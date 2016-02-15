@@ -5,5 +5,14 @@
 
     .page-header {
         border: none;
+        color: $gray-darkest;
+
+        .line-1 {
+            font-size: 63px;
+        }
+
+        .line-2 {
+            font-size: 21px;
+        }
     }
 }
