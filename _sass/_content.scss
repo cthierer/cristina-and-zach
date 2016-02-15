@@ -1,0 +1,27 @@
+
+.page-section {
+
+    p {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .header-wrapper {
+        background-color: $color-1;
+        border-top: 1px solid $color-3;
+        border-bottom: 1px solid $color-3;
+        color: $gray-lightest;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+
+        .header {
+            font-size: 2.5em;
+            margin: 0;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+    }
+}

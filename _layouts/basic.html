@@ -6,5 +6,16 @@ layout: default
 </header>
 
 <div id="main-body">
-    {{ content }}   
+    <section class="page-section">
+        <header class="header-wrapper">
+            <div class="container">
+                <h2 class="header">
+                    {{ page.title }}
+                </h2>
+            </div>
+        </header>
+        <div class="container section-content">
+            {{ content }}
+        </div>
+    </section>
 </div>
