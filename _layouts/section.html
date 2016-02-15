@@ -1,0 +1,18 @@
+---
+layout: basic
+---
+{% for post in site.categories[page.category] | reverse %}
+<article>
+    <header>
+        <h3 class="header">
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h3>
+    </header>
+    {{ post.excerpt }}
+</article>
+{% if forloop.last == false %}
+<hr />
+{% endif %}
+{% endfor %}
