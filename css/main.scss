@@ -22,8 +22,9 @@ $font-script:   'Lobster', cursive;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "base",
-    "nav-site",
     "content",
+    "nav-site",
+    "footer-basic",
     "themes",
     "welcomtron"
 ;

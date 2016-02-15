@@ -11,7 +11,19 @@ lookup:
   registry: 
     title: Registry 
     link: /#registry
+  lodging: 
+    title: Lodging 
+    link: /event/lodging/
+  sample:
+    title: Lorem ipsum 
+    link: /event/sample/
 main: 
   - big-day 
+  - story 
+  - registry 
+footer: 
+  - big-day 
+  - lodging 
+  - sample 
   - story 
   - registry 

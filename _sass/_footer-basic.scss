@@ -1,0 +1,43 @@
+
+#site-footer {
+    margin-top: 30px;
+
+    a {
+
+        &,
+        &:link,
+        &:visited {
+            color: $gray-light;
+        }
+
+        &:hover,
+        &:active {
+            color: $gray-lightest;
+            text-decoration: underline;
+        }
+    }
+
+    .content-wrapper {
+        background-color: $gray-darkest;
+        border-top: 1px solid $gray-darker;
+        color: $gray-light;
+        font-size: 1em;
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.border-photo-1 {
+    background-image: url('../assets/photo-1441644599508-24ae08965c5c.jpg');
+    background-color: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid $color-3;
+    padding-top: 60px;
+
+    .content-wrapper {
+        /*margin-top: 60px;*/
+    }
+}

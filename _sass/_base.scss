@@ -1,9 +1,14 @@
 
 body {
-    background-color: white;
+    background-color: $gray-darkest;
+    color: $gray-darker;
     font-size: 10pt;
     padding-top: 70px;
     position: relavite;
+
+    .content-wrapper {
+        background-color: $gray-lightest
+    }
 }
 
 /* Font styling */
@@ -15,7 +20,8 @@ body,
 
 h1, h2, h3, h4, h5, h6,
 .header,
-.header-text {
+.header-text,
+.text-header {
     font-family: $font-header;
 }
 
