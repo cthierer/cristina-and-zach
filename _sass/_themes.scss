@@ -9,3 +9,12 @@
 .background-solid-1 {
     background-color: $gray-lightest;
 }
+
+/* block space for a feature image (set separately) */
+.feature-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}

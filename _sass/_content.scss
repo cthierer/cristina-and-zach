@@ -30,6 +30,36 @@
     }
 }
 
+.panel-list {
+    background-color: $color-3;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 20px 0;
+
+    .panel-feature {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+
+        .panel-heading {
+            background-color: $color-1;
+            border-color: $color-3;
+            border-radius: 4px;
+
+            .panel-title {
+                font-size: 1.5em;
+                color: $gray-lightest;
+                text-align: center;
+            }
+        }
+
+        .content {
+
+        }
+    }
+}
+
 /* generate a CSS box */
 .fill-box {
     border: 1px solid $gray-light;
@@ -38,6 +68,7 @@
     height: 150px;
 }
 
+/* increase the font size of text block */
 .text-large {
     font-size: 2em;
 }
