@@ -137,19 +137,19 @@ stock photos.
     <div class="col-sm-4">
         <a href="/assets/mountains-trees-fall-foliage.jpg">
             <img src="/assets/mountains-trees-fall-foliage.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
     <div class="col-sm-4">
         <a href="/assets/photo-1441644599508-24ae08965c5c.jpg">
             <img src="/assets/photo-1441644599508-24ae08965c5c.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
     <div class="col-sm-4">
         <a href="/assets/photo-1447752875215-b2761acb3c5d.jpg">
             <img src="/assets/photo-1447752875215-b2761acb3c5d.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
 </div>
@@ -162,19 +162,19 @@ High-quality photos to use on the site.
     <div class="col-sm-4">
         <a href="/assets/1013466_10151514826258263_1496454174_n.jpg">
             <img src="/assets/1013466_10151514826258263_1496454174_n.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
     <div class="col-sm-4">
         <a href="/assets/1509027_10152592391378263_7346292314947514011_n.jpg">
             <img src="/assets/1509027_10152592391378263_7346292314947514011_n.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
     <div class="col-sm-4">
         <a href="/assets/10258498_10152103945108263_7726272024445029741_o.jpg">
             <img src="/assets/10258498_10152103945108263_7726272024445029741_o.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
 </div>
@@ -183,13 +183,13 @@ High-quality photos to use on the site.
     <div class="col-sm-4">
         <a href="/assets/10272731_2218977713689_3459184200293101149_o.jpg">
             <img src="/assets/10272731_2218977713689_3459184200293101149_o.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
     <div class="col-sm-4">
         <a href="/assets/10424311_10152135510053263_8621162008087988139_n.jpg">
             <img src="/assets/10424311_10152135510053263_8621162008087988139_n.jpg"
-                class="img-responsive" />
+                class="img-responsive img-thumbnail" />
         </a>
     </div>
 </div>
