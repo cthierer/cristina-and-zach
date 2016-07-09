@@ -1,6 +1,7 @@
 ---
 title: Styles
 layout: basic
+permalink: styles/
 ---
 
 <p class="lead">
