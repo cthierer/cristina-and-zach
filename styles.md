@@ -4,9 +4,8 @@ layout: basic
 permalink: styles/
 ---
 
-<p class="lead">
 Overview of the colors, fonts, and other styling properties used on the site.
-</p>
+{: .lead}
 
 The site is built off of the [Bootstrap 3](http://getbootstrap.com/css/)
 front-end library, which defines the basic
@@ -102,27 +101,24 @@ Headings should be _sans-serif_, whereas body should be _serif_.
 Automatically set on heading tags, or by using the `text-header` class.
 Currently uses the **[Lato](https://www.google.com/fonts/specimen/Lato)** font.
 
-<p class="text-header font-sample">
-The quick brown fox jumps over the lazy dog.
-</p>
+> The quick brown fox jumps over the lazy dog.
+{: .text-header .text-large}
 
 #### Body
 
 Default font for the site, or set using the `text-body` class. Currently uses
 the **[Roboto Slab](https://www.google.com/fonts/specimen/Roboto+Slab)** font.
 
-<p class="text-body font-sample">
-The quick brown fox jumps over the lazy dog.
-</p>
+> The quick brown fox jumps over the lazy dog.
+{: .text-body .text-large}
 
 #### Accent
 
 Set explicitly using the `text-script` class. Currently uses the
 **[Lobster](https://www.google.com/fonts/specimen/Lobster)** font.
 
-<p class="text-script font-sample">
-The quick brown fox jumps over the lazy dog.
-</p>
+> The quick brown fox jumps over the lazy dog.
+{: .text-script .text-large}
 
 ---
 

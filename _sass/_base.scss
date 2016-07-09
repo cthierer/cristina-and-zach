@@ -2,7 +2,6 @@
 body {
     background-color: $gray-darkest;
     color: $gray-darker;
-    font-size: 10pt;
     position: relavite;
 
     .content-wrapper {
@@ -28,6 +27,8 @@ h1, h2, h3, h4, h5, h6,
 .text-script {
     font-family: $font-script;
 }
+
+/* Color styling */
 
 .bg-color-1 {
     background-color: $color-1;
@@ -71,22 +72,4 @@ h1, h2, h3, h4, h5, h6,
 
 .bg-gray-lightest {
     background-color: $gray-lightest;
-}
-
-.fill-box {
-    border: 1px solid $gray-light;
-    display: block;
-    width: 100%;
-    height: 150px;
-}
-
-.font-sample {
-    background-color: $gray-lighter;
-    border: 1px solid $gray-light;
-    font-size: 2em;
-    padding: 8px;
-}
-
-#page-basic {
-    padding-top: 70px;
 }
