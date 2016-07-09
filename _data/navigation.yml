@@ -1,29 +1,18 @@
 lookup:
-  home: 
-    title: Home 
-    link: /#
-  big-day: 
-    title: The big day 
-    link: /#the-big-day
-  story:
-    title: Our story 
-    link: /#our-story
-  registry: 
-    title: Registry 
-    link: /#registry
-  lodging: 
-    title: Lodging 
-    link: /event/lodging/
-  sample:
-    title: Lorem ipsum 
-    link: /event/sample/
-main: 
-  - big-day 
-  - story 
-  - registry 
-footer: 
-  - big-day 
-  - lodging 
-  - sample 
-  - story 
-  - registry 
+    story:
+        title: Our story
+        link: /#
+    wedding-party:
+        title: Wedding party
+        link: /#
+    big-day:
+        title: Big day
+        link: /#
+    registry:
+        title: Registry
+        link: /#
+main:
+    - story
+    - wedding-party
+    - big-day
+    - registry
