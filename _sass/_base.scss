@@ -13,7 +13,8 @@ body {
 /* Font styling */
 
 body,
-.body-text {
+.body-text,
+.text-body {
     font-family: $font-body;
 }
 
@@ -26,6 +27,64 @@ h1, h2, h3, h4, h5, h6,
 
 .text-script {
     font-family: $font-script;
+}
+
+.bg-color-1 {
+    background-color: $color-1;
+}
+
+.bg-color-2 {
+    background-color: $color-2;
+}
+
+.bg-color-3 {
+    background-color: $color-3;
+}
+
+.bg-color-light {
+    background-color: $color-light;
+}
+
+.bg-color-dark {
+    background-color: $color-dark;
+}
+
+.bg-gray-darkest {
+    background-color: $gray-darkest;
+}
+
+.bg-gray-darker {
+    background-color: $gray-darker;
+}
+
+.bg-gray-normal {
+    background-color: $gray-normal;
+}
+
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+.bg-gray-lighter {
+    background-color: $gray-lighter;
+}
+
+.bg-gray-lightest {
+    background-color: $gray-lightest;
+}
+
+.fill-box {
+    border: 1px solid $gray-light;
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+.font-sample {
+    background-color: $gray-lighter;
+    border: 1px solid $gray-light;
+    font-size: 2em;
+    padding: 8px;
 }
 
 #page-basic {
