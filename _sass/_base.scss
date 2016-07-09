@@ -3,7 +3,6 @@ body {
     background-color: $gray-darkest;
     color: $gray-darker;
     font-size: 10pt;
-    padding-top: 70px;
     position: relavite;
 
     .content-wrapper {
@@ -27,4 +26,8 @@ h1, h2, h3, h4, h5, h6,
 
 .text-script {
     font-family: $font-script;
+}
+
+#page-basic {
+    padding-top: 70px;
 }

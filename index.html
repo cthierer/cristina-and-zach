@@ -1,36 +1,12 @@
 ---
-layout: single-page
+layout: landing
+theme: background-photo-1
 ---
-<div id="welcomtron" class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="page-header text-center">
-          <span class="text-script line-1">October 15, 2016</span>
-          <br/>
-          <span class="line-2">Frederick, Maryland</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="home background-solid-1">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="text-center page-header">
+    <p class="text-header h1">
+        October 15, 2016
+    </p>
+    <p class="text-header text-sub">
+        Frederick, Maryland
+    </p>
 </div>
