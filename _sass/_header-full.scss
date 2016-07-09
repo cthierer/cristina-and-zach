@@ -14,21 +14,29 @@
         }
     }
 
-    .nav-item {
-        margin-top: 10px;
-
-        & > a {
-            font-size: 18px;
-        }
-    }
-
     .nav-list {
         font-size: 16px;
         margin: 0;
 
         & > li {
             display: inline-block;
+            padding: 0;
+        }
+
+        a {
+            display: inline-block;
             padding: 20px 8px;
+        }
+
+        a:link,
+        a:visited {
+            color: $gray-darker;
+        }
+
+        a:active,
+        a:hover {
+            color: $gray-darkest;
+            background-color: $gray-lighter;
         }
     }
 
@@ -77,7 +85,7 @@
         .nav-list {
             font-size: 18px;
 
-            & > li {
+            a {
                 padding: 20px;
             }
         }
