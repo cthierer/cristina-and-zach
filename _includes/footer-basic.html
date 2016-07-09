@@ -1,7 +1,12 @@
 <div class="content-wrapper">
     <div class="container">
         <div class="col-sm-7 col-sm-offset-5 text-right text-header">
-            <p><small>Last updated {{ site.time | date: '%d %B %Y' }}</small></p>
+            <p>
+                <small>
+                    {{ site.data.contents.updated-on }}
+                    {{ site.time | date: '%d %B %Y' }}
+                </small>
+            </p>
         </div>
     </div>
 </div>
