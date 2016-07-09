@@ -18,7 +18,15 @@
   </head>
   <body>
     <div class="content-wrapper">
-      {{ content }}
+        <header id="site-header">
+            {% include header-full.html %}
+        </header>
+
+        {{ content }}
+
+        <footer id="site-footer" class="border-photo-1">
+            {% include footer-basic.html %}
+        </footer>
     </div>
   </body>
 </html>

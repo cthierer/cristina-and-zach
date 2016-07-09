@@ -1,27 +1,17 @@
 ---
 layout: default
 ---
-<div id="page-basic">
-    <header id="site-header">
-        {% include nav-site.html %}
-    </header>
-
-    <div id="main-body">
-        <section class="page-section">
-            <header class="header-wrapper">
-                <div class="container">
-                    <h2 class="header">
-                        {{ page.title }}
-                    </h2>
-                </div>
-            </header>
-            <div class="container section-content">
-                {{ content }}
+<div id="main-body">
+    <section class="page-section">
+        <header class="header-wrapper">
+            <div class="container">
+                <h2 class="header">
+                    {{ page.title }}
+                </h2>
             </div>
-        </section>
-    </div>
-
-    <footer id="site-footer" class="border-photo-1">
-        {% include footer-basic.html %}
-    </footer>
+        </header>
+        <div class="container section-content">
+            {{ content }}
+        </div>
+    </section>
 </div>
