@@ -1,20 +1,6 @@
 <div class="content-wrapper">
     <div class="container">
         <div class="col-sm-7 col-sm-offset-5 text-right text-header">
-            <nav>
-                <ul class="list-inline">
-                    {% for key in site.data.navigation.footer %}
-                    {% assign nav = site.data.navigation.lookup[key] %}
-                    {% if nav %}
-                    <li>
-                        <a href="{{ nav.link }}">
-                            {{ nav.title | escape }}
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
             <p><small>Last updated {{ site.time | date: '%d %B %Y' }}</small></p>
         </div>
     </div>
