@@ -42,10 +42,29 @@
 
     .title {
         border-top: 1px solid $gray-lighter;
-        color: $gray-darker;
         font-size: 26px;
         margin: 0;
         padding: 8px 0;
+
+        &,
+        a,
+        a:link,
+        a:visited {
+            color: $gray-darker;
+        }
+
+        a:hover,
+        a:active {
+            &,
+            & > .ampersand {
+                color: $gray-darkest;
+                text-decoration: none;
+            }
+
+            & > .name {
+                text-decoration: underline;
+            }
+        }
 
         .name,
         .ampersand {
