@@ -16,22 +16,19 @@
                             data-toggle="collapse"
                             data-target="#main-nav"
                             aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">
+                            {{ site.data.contents.toggle-navigation }}
+                        </span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <h1 class="title">
-                        <a href="/">
-                            <span class="name">
-                                Cristina
-                            </span>
-                            <span class="ampersand">
-                                &amp;
-                            </span>
-                            <span class="name">
-                                Zachary
-                            </span>
+                        <a href="{{ site.data.navigation.lookup.home.link }}"
+                                title="{{ site.data.navigation.lookup.home.title}}">
+                            <span class="name">{{ site.data.contents.her }}</span>
+                            <span class="ampersand">&amp;</span>
+                            <span class="name">{{ site.data.contents.him }}</span>
                         </a>
                     </h1>
                 </div>

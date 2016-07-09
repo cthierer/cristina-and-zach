@@ -1,4 +1,7 @@
 lookup:
+    home:
+        title: Home
+        link: /
     story:
         title: Our story
         link: /#
