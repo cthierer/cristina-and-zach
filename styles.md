@@ -115,7 +115,7 @@ the **[Roboto Slab](https://www.google.com/fonts/specimen/Roboto+Slab)** font.
 #### Accent
 
 Set explicitly using the `text-script` class. Currently uses the
-**[Lobster](https://www.google.com/fonts/specimen/Lobster)** font.
+**[Parisienne](https://www.google.com/fonts/specimen/Parisienne)** font.
 
 > The quick brown fox jumps over the lazy dog.
 {: .text-script .text-large}
