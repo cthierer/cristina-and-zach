@@ -7,6 +7,10 @@
         color: $gray-darkest;
         margin-top: 70px;
 
+        .h1 {
+            font-size: 45px;
+        }
+
         .text-sub {
             font-size: 31px;
         }
@@ -21,6 +25,14 @@
 }
 
 @media (min-width: 768px) {
+    .jumbotron.landing-page {
+        .page-header {
+            .h1 {
+                font-size: 63px;
+            }
+        }
+    }
+
     .landing-page-wrapper {
         padding: 25px;
         padding-top: 0;
