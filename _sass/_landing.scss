@@ -2,17 +2,25 @@
     border: 1px solid $gray-lighter;
     margin: 0;
 
+    .container {
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+
     .page-header {
         border: none;
-        color: $gray-darkest;
+        color: $gray-lighter;
         margin-top: 70px;
+        text-align: left;
+        text-shadow: 1px 1px $gray-darker;
 
         .h1 {
-            font-size: 45px;
+            font-size: 38px;
         }
 
         .text-sub {
-            font-size: 31px;
+            font-size: 24px;
         }
     }
 }
@@ -26,9 +34,25 @@
 
 @media (min-width: 768px) {
     .jumbotron.landing-page {
+
+        .container {
+            top: auto;
+            left: auto;
+            bottom: 0;
+            right: 35px;
+        }
+
         .page-header {
+            color: $gray-darkest;
+            text-align: right;
+            text-shadow: 1px 1px $gray-lighter;
+
             .h1 {
                 font-size: 63px;
+            }
+
+            .text-sub {
+                font-size: 32px;
             }
         }
     }

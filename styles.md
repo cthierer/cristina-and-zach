@@ -42,14 +42,6 @@ Used as accent colors on the site.
         <div class="bg-color-3 fill-box"></div>
         <pre>color-3</pre>
     </div>
-    <div class="col-sm-2">
-        <div class="bg-color-light fill-box"></div>
-        <pre>color-light</pre>
-    </div>
-    <div class="col-sm-2">
-        <div class="bg-color-dark fill-box"></div>
-        <pre>color-dark</pre>
-    </div>
 </div>
 
 #### Grays
@@ -141,12 +133,6 @@ stock photos.
         </a>
     </div>
     <div class="col-sm-4">
-        <a href="/assets/photo-1441644599508-24ae08965c5c.jpg">
-            <img src="/assets/photo-1441644599508-24ae08965c5c.jpg"
-                class="img-responsive img-thumbnail" />
-        </a>
-    </div>
-    <div class="col-sm-4">
         <a href="/assets/photo-1447752875215-b2761acb3c5d.jpg">
             <img src="/assets/photo-1447752875215-b2761acb3c5d.jpg"
                 class="img-responsive img-thumbnail" />
@@ -160,11 +146,89 @@ High-quality photos to use on the site.
 
 <div class="row">
     <div class="col-sm-4">
+        <a href="/assets/Dalton-1.jpg">
+            <img src="/assets/Dalton-1.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-41.jpg">
+            <img src="/assets/Dalton-41.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-46.jpg">
+            <img src="/assets/Dalton-46.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 1.5em;">
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-48.jpg">
+            <img src="/assets/Dalton-48.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-71.jpg">
+            <img src="/assets/Dalton-71.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-74.jpg">
+            <img src="/assets/Dalton-74.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 1.5em;">
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-76.jpg">
+            <img src="/assets/Dalton-76.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-79.jpg">
+            <img src="/assets/Dalton-79.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-111.jpg">
+            <img src="/assets/Dalton-111.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 1.5em;">
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-135.jpg">
+            <img src="/assets/Dalton-135.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="/assets/Dalton-141.jpg">
+            <img src="/assets/Dalton-141.jpg"
+                class="img-responsive img-thumbnail" />
+        </a>
+    </div>
+    <div class="col-sm-4">
         <a href="/assets/1013466_10151514826258263_1496454174_n.jpg">
             <img src="/assets/1013466_10151514826258263_1496454174_n.jpg"
                 class="img-responsive img-thumbnail" />
         </a>
     </div>
+</div>
+
+<div class="row" style="margin-top: 1.5em;">
     <div class="col-sm-4">
         <a href="/assets/1509027_10152592391378263_7346292314947514011_n.jpg">
             <img src="/assets/1509027_10152592391378263_7346292314947514011_n.jpg"
@@ -177,15 +241,15 @@ High-quality photos to use on the site.
                 class="img-responsive img-thumbnail" />
         </a>
     </div>
-</div>
-
-<div class="row" style="margin-top: 1.5em;">
     <div class="col-sm-4">
         <a href="/assets/10272731_2218977713689_3459184200293101149_o.jpg">
             <img src="/assets/10272731_2218977713689_3459184200293101149_o.jpg"
                 class="img-responsive img-thumbnail" />
         </a>
     </div>
+</div>
+
+<div class="row" style="margin-top: 1.5em;">
     <div class="col-sm-4">
         <a href="/assets/10424311_10152135510053263_8621162008087988139_n.jpg">
             <img src="/assets/10424311_10152135510053263_8621162008087988139_n.jpg"
