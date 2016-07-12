@@ -4,22 +4,14 @@
 
     .page-header {
         border: none;
-        color: $gray-lighter;
-        margin-top: 50px;
+        color: $gray-darker;
+        margin-top: 0;
         text-align: center;
-        text-shadow: 1px 1px $gray-darkest,
-            1px 1px $gray-darkest,
-            1px 1px $gray-darkest,
-            1px 1px $gray-darkest;
-
-        .h1,
-        .text-sub {
-            font-weight: 600;
-        }
 
         .h1 {
             font-size: 36px;
-            color: $gray-lightest;
+            margin-top: 0;
+            text-shadow: 1px 1px $gray-lighter;
         }
 
         .text-sub {
