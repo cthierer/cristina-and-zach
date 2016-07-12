@@ -1,8 +1,13 @@
 # Site settings
 title: Cristina & Zachary
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/"
+url: "https://www.bersteinwithlove.com"
 
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, README.md, Vagrantfile]
+
+# Site meta
+description: >
+    Event details, accomodation information, and registries for
+    Cristina Dalton's and Zachary Berstein's wedding on October 15, 2016.

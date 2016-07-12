@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | escape }}</title>
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description | escape }}">
 
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='/lib/css/fonts.css' rel='stylesheet' type='text/css'>
