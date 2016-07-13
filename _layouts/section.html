@@ -1,73 +1,12 @@
 ---
 layout: basic
 ---
-{% if page.feature-image %}
-<div class="feature-image" style="background-image: url('/assets/{{ page.feature-image }}');"></div>
+{% if page.theme %}
+<div class="feature-image {{page.theme}}"></div>
 {% endif %}
-<div class="row panel-list">
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Timeline</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Location</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Lodging</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
-        </div>
-    </div>
-</div>
-{% for post in site.categories[page.category] | reverse %}
-<article>
-    <header>
-        <h3 class="header">
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
-        </h3>
-    </header>
-    {{ post.excerpt }}
-</article>
+{{ content }}
+{% for post in site.categories[page.category] %}
+{% include post.html %}
 {% if forloop.last == false %}
 <hr />
 {% endif %}

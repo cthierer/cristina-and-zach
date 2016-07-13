@@ -72,3 +72,68 @@
 .text-large {
     font-size: 2em;
 }
+
+.link-more {
+    font-family: $font-header;
+    font-size: 1.3em;
+    text-align: right;
+
+    a.btn {
+        display: inline-block;
+        font-size: 1.3em;
+        width: 100%;
+
+        .glyphicon {
+            float: right;
+        }
+    }
+}
+
+.map {
+    width: 100%;
+}
+
+dl.timeline {
+    color: $color-1;
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 5px;
+
+    dt,
+    dd {
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+
+    dt {
+        font-family: $font-header;
+        text-align: center;
+        width: 50px;
+    }
+
+    dd {
+        border-left: 2px solid $color-1;
+        margin-left: 50px;
+        padding-left: 10px;
+    }
+}
+
+.two-col {
+    .header {
+        border-bottom: 1px solid $gray-lighter;
+        color: $color-1;
+        font-size: 1.8em;
+        padding-bottom: 3px;
+    }
+
+    .place {
+        font-size: 1.3em;
+    }
+}
+
+.post {
+    footer {
+        font-size: .8em;
+        margin-top: 12px;
+    }
+}

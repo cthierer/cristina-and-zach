@@ -1,0 +1,25 @@
+---
+layout: basic
+---
+{% assign posts = site.categories[page.category] | reverse %}
+{% assign numPosts = posts | size %}
+{% if page.theme %}
+<div class="feature-image {{page.theme}}"></div>
+{% endif %}
+{{ content }}
+<div class="row two-col">
+    {% for post in posts limit:2 %}
+    <div class="col-sm-6">
+        {% include post.html %}
+    </div>
+    {% endfor %}
+</div>
+{% if numPosts > 2 %}
+<hr />
+{% for post in posts offset:2 %}
+{% include post.html %}
+{% if forloop.last == false %}
+<hr />
+{% endif %}
+{% endfor %}
+{% endif %}

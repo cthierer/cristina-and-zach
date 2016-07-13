@@ -5,15 +5,25 @@
     background-repeat: no-repeat;
 }
 
+.background-photo-2 {
+    background-image: url('../assets/Dalton-74_w.jpg');
+    background-position: center;
+}
+
 .background-solid-1 {
     background-color: $gray-lightest;
 }
 
 /* block space for a feature image (set separately) */
 .feature-image {
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 250px;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .feature-image {
+        height: 390px;
+    }
 }
