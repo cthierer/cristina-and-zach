@@ -61,7 +61,9 @@
                     <ul class="nav navbar-nav">
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
-                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title }}</a></li>
+                        {% if jekyll.environment == "development" or nav.published %}
+                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title[page.lang] }}</a></li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
