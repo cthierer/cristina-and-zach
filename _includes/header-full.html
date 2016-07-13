@@ -1,12 +1,23 @@
+{% assign numNavLinks = site.data.navigation.main | size %}
+{% assign maxLinks = numNavLinks | divided_by: 2 | ciel %}
+{% assign numLinks = 0 %}
+{% assign lastIndex = 0 %}
 <div class="title-bar text-header">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 hidden-xs text-right">
                     <ul class="nav-list list-inline">
-                        {% for key in site.data.navigation.main limit:2 %}
+                        {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
+                        {% if jekyll.environment == "development" or nav.published %}
                         <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        {% assign numLinks = numLinks | plus: 1 %}
+                        {% if numLinks >= maxLinks %}
+                        {% assign lastIndex = forloop.index %}
+                        {% break %}
+                        {% endif %}
+                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -33,12 +44,16 @@
                     </h1>
                 </div>
                 <div class="col-sm-4 hidden-xs text-left">
+                    {% if numLinks >= maxLinks %}
                     <ul class="nav-list list-inline">
-                        {% for key in site.data.navigation.main limit:2 offset:2 %}
+                        {% for key in site.data.navigation.main offset:lastIndex %}
                         {% assign nav = site.data.navigation.lookup[key] %}
+                        {% if jekyll.environment == "development" or nav.published %}
                         <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
+                    {% endif %}
                 </div>
             </div>
             <div class="visible-xs-block">

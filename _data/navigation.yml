@@ -2,16 +2,25 @@ lookup:
     home:
         title: Home
         link: /
+        published: false
     story:
         title: Our story
         link: /#
-    wedding-party:
-        title: Wedding party
-        link: /#
+        published: false
     big-day:
         title: Big day
         link: /big-day/
+        published: false
     registry:
         title: Registry
         link: /#
+        published: false
+    share:
+        title: Share memories
+        link: /share/
+        published: false
 main:
+    - story
+    - big-day
+    - registry
+    - share

@@ -1,7 +1,14 @@
 cristina-and-zach
 =================
 
-Development environment 
+Configuration
+-------------
+
+Set the `JEKYLL_ENV` environment variable to the appropriate environment:
+  - "production"
+  - "development"
+
+Development environment
 -----------------------
 
 ### Installation
