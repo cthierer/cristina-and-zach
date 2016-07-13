@@ -90,32 +90,47 @@
 }
 
 .map {
+    border: 1px solid $gray-darkest;
+    margin: 1em 0 1.5em;
     width: 100%;
 }
 
 dl.timeline {
-    color: $color-1;
     font-size: 1.2em;
     margin: 20px;
     padding: 5px;
 
     dt,
     dd {
-        padding-bottom: 3px;
-        padding-top: 3px;
+        padding-top: 6px;
     }
 
     dt {
+        background-color: $color-1;
+        color: $gray-lightest;
         font-family: $font-header;
+        font-weight: 400;
+        padding-bottom: 6px;
         text-align: center;
         width: 50px;
     }
 
     dd {
+        background-color: $color-3;
+        color: $gray-darkest;
         border-left: 2px solid $color-1;
         margin-left: 50px;
         padding-left: 10px;
     }
+}
+
+.address {
+    background-color: $color-3;
+    border-left: 50px solid $color-1;
+    color: $gray-darkest;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 10px;
 }
 
 .two-col {
