@@ -1,23 +1,43 @@
 lookup:
     home:
-        title: Home
-        link: /
-        published: false
+        title:
+            en: Home
+            es: Casa
+        link:
+            en: /
+            es: /es/
+        published: true
     story:
-        title: Our story
-        link: /#
+        title:
+            en: Our story
+            es: Nuestra historia
+        link:
+            en: "#"
+            es: "#"
         published: false
     big-day:
-        title: Big day
-        link: /big-day/
+        title:
+            en: Big day
+            es: Gran día
+        link:
+            en: /big-day/
+            es: "#"
         published: false
     registry:
-        title: Registry
-        link: /#
+        title:
+            en: Registry
+            es: Registro
+        link:
+            en: "#"
+            es: "#"
         published: false
     share:
-        title: Share memories
-        link: /share/
+        title:
+            en: Share memories
+            es: Comparta recuerdos
+        link:
+            en: "#"
+            es: "#"
         published: false
 main:
     - story

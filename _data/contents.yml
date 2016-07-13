@@ -1,4 +1,12 @@
-her: Cristina
-him: Zachary
-updated-on: Last updated
-toggle-navigation: Toggle navigation
+en:
+    her: Cristina
+    him: Zachary
+    updated-on: Last updated
+    title: Cristina & Zachary's wedding website
+    toggle-navigation: Toggle navigation
+es:
+    her: Cristina
+    him: Zachary
+    updated-on: Última actualización
+    title: El web de boda de Cristina & Zachary
+    toggle-navigation: Mostrar navegación

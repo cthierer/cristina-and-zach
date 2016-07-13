@@ -11,7 +11,7 @@
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title[page.lang] }}</a></li>
                         {% assign numLinks = numLinks | plus: 1 %}
                         {% if numLinks >= maxLinks %}
                         {% assign lastIndex = forloop.index %}
@@ -28,18 +28,18 @@
                             data-target="#main-nav"
                             aria-expanded="false">
                         <span class="sr-only">
-                            {{ site.data.contents.toggle-navigation }}
+                            {{ site.data.contents[page.lang].toggle-navigation }}
                         </span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <h1 class="title">
-                        <a href="{{ site.data.navigation.lookup.home.link }}"
-                                title="{{ site.data.navigation.lookup.home.title}}">
-                            <span class="name">{{ site.data.contents.her }}</span>
+                        <a href="{{ site.data.navigation.lookup.home.link[page.lang] }}"
+                                title="{{ site.data.navigation.lookup.home.title[page.lang] }}">
+                            <span class="name">{{ site.data.contents[page.lang].her }}</span>
                             <span class="ampersand">&amp;</span>
-                            <span class="name">{{ site.data.contents.him }}</span>
+                            <span class="name">{{ site.data.contents[page.lang].him }}</span>
                         </a>
                     </h1>
                 </div>
@@ -49,7 +49,7 @@
                         {% for key in site.data.navigation.main offset:lastIndex %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title[page.lang] }}</a></li>
                         {% endif %}
                         {% endfor %}
                     </ul>
@@ -61,7 +61,7 @@
                     <ul class="nav navbar-nav">
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
