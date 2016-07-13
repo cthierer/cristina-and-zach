@@ -1,10 +1,12 @@
 # Site settings
-baseurl: "/"
+baseurl: ""
 url: "https://www.bersteinwithlove.com"
 
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, README.md, Vagrantfile]
+gems:
+    - jekyll-sitemap
 
 # Frontmatter defaults
 defaults:
