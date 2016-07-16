@@ -39,8 +39,22 @@ lookup:
             en: "#"
             es: "#"
         published: false
+    accommodations:
+        title:
+            en: Accommodations
+            es: Accommodations
+        link:
+            en: /big-day/accommodations/
+            es: "#"
+        published: false
 main:
     - story
     - big-day
+    - registry
+    - share
+footer:
+    - story
+    - big-day
+    - accommodations
     - registry
     - share

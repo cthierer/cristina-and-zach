@@ -1,12 +1,28 @@
 
 #site-footer {
-    border-bottom: 1px solid $gray-lighter;
+    border: none;
+    padding-top: 25px;
+    padding-bottom: 10px;
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .say-hello {
+        font-size: 1.2em;
+    }
+
+    &,
+    & > .content-wrapper {
+        background-color: $color-1;
+        color: $gray-lighter;
+    }
 
     a {
         &,
         &:link,
         &:visited {
-            color: $gray-light;
+            color: $gray-lighter;
         }
 
         &:hover,
@@ -14,19 +30,5 @@
             color: $gray-lightest;
             text-decoration: underline;
         }
-    }
-}
-
-.border-photo-1 {
-    background-image: url('../assets/photo-1441644599508-24ae08965c5c.jpg');
-    background-color: none;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: 1px solid $color-3;
-    padding-top: 60px;
-
-    .content-wrapper {
-        /*margin-top: 60px;*/
     }
 }

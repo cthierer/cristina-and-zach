@@ -1,12 +1,60 @@
 <div class="content-wrapper">
-    <div class="container-fluid">
-        <div class="col-sm-7 col-sm-offset-5 text-right text-header">
-            <p>
-                <small>
-                    {{ site.data.contents[page.lang].updated-on }}
-                    {{ site.time | date: '%d %B %Y' }}
-                </small>
-            </p>
+    <div class="container">
+        <h2 class="sr-only">
+            {{ site.data.contents[page.lang].footer }}
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="header">
+                    <a href="/big-day/">
+                        {{ site.data.contents[page.lang].event}}
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                </h3>
+                {{ site.data.contents[page.lang].blurb-ceremony | markdownify }}
+                {{ site.data.contents[page.lang].blurb-reception | markdownify }}
+            </div>
+            <hr class="visible-xs-block" />
+            <div class="col-sm-4 text-right-full">
+                <h3 class="header">
+                    {{ site.data.contents[page.lang].links }}
+                </h3>
+                <nav>
+                    <ul class="list-unstyled">
+                        {% for key in site.data.navigation.footer %}
+                        {% assign nav = site.data.navigation.lookup[key] %}
+                        <li>
+                            <a href="{{ nav.link[page.lang] }}">
+                                {{ nav.title[page.lang] }}
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <hr class="visible-xs-block" />
+            <div class="col-sm-4 text-right-full">
+                <h3 class="header">
+                    {{ site.data.contents[page.lang].hello }}
+                </h3>
+                <a class="say-hello" href="mailto:{{ site.contact }}">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                    {{ site.contact }}
+                </a>
+            </div>
         </div>
+        {% if jekyll.environment == "development" %}
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5 text-right text-header">
+                <p>
+                    <small>
+                        {{ site.data.contents[page.lang].updated-on }}
+                        {{ site.time | date: '%d %B %Y' }}
+                    </small>
+                </p>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>

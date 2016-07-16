@@ -1,6 +1,7 @@
 # Site settings
 baseurl: ""
 url: "https://www.bersteinwithlove.com"
+contact: "hello@bersteinwithlove.com"
 keys:
     google-maps: AIzaSyDrD_iLTZozQ0COxNAWTCsSV7MloGaLDD8
 
