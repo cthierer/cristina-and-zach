@@ -3,6 +3,7 @@ layout: basic
 ---
 {% assign posts = site.categories[page.category] | reverse %}
 {% assign numPosts = posts | size %}
+{% assign numRows = numPosts | divided_by: 2 | ceil | minus: 1 %}
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
@@ -10,19 +11,15 @@ layout: basic
 {% include feature-panels.html panels=page.feature-panels %}
 {% endif %}
 {{ content }}
+{% for i in (0..numRows) %}
+{% assign offset = i | times:2 %}
 <div class="row two-col">
-    {% for post in posts limit:2 %}
+    {% for post in posts limit:2 offset:offset %}
     <div class="col-sm-6">
         {% include post.html %}
     </div>
+    <hr class="visible-xs-block" />
     {% endfor %}
 </div>
-{% if numPosts > 2 %}
-<hr />
-{% for post in posts offset:2 %}
-{% include post.html %}
-{% if forloop.last == false %}
-<hr />
-{% endif %}
+<hr class="hidden-xs" />
 {% endfor %}
-{% endif %}

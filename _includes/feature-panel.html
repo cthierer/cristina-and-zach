@@ -9,6 +9,18 @@
     {% if include.content %}
     <div class="panel-body">
         {{ include.content | markdownify }}
+        {% if include.link %}
+        <div class="col-sm-{{ numCols }} link-more visible-xs-block">
+            <a href="{{ include.link }}">
+                {% if include.link-text %}
+                {{ include.link-text | escape }}
+                {% else %}
+                {{ site.data.contents[page.lang].more }}
+                {% endif %}
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </a>
+        </div>
+        {% endif %}
     </div>
     {% endif %}
 </div>
