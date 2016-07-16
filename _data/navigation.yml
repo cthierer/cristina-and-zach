@@ -47,7 +47,16 @@ lookup:
             en: /big-day/accommodations/
             es: "#"
         published: false
+    language:
+        title:
+            en: Español
+            es: English
+        link:
+            en: /es/
+            es: /
+        published: true
 main:
+    - language
     - story
     - big-day
     - registry

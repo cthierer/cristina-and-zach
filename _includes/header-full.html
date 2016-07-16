@@ -1,5 +1,5 @@
 {% assign numNavLinks = site.data.navigation.main | size %}
-{% assign maxLinks = numNavLinks | divided_by: 2 | ciel %}
+{% assign maxLinks = numNavLinks | divided_by: 2 | ceil | plus: 1 %}
 {% assign numLinks = 0 %}
 {% assign lastIndex = 0 %}
 <div class="title-bar text-header">
@@ -11,7 +11,7 @@
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li class="{% if page.active-nav == key %}active{% endif %}">
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
                             <a href="{{ nav.link[page.lang] }}">
                                 {{ nav.title[page.lang] }}
                             </a>
@@ -53,7 +53,7 @@
                         {% for key in site.data.navigation.main offset:lastIndex %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li class="{% if page.active-nav == key %}active{% endif %}">
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
                             <a href="{{ nav.link[page.lang] }}">
                                 {{ nav.title[page.lang] }}
                             </a>
@@ -70,7 +70,7 @@
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li class="{% if page.active-nav == key %}active{% endif %}">
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
                             <a href="{{ nav.link[page.lang] }}">
                                 {{ nav.title[page.lang] }}
                             </a>
@@ -83,3 +83,57 @@
         </div>
     </nav>
 </div>
+
+<script type="text/javascript">
+/**
+ * @module com.christhierer.dev.page.languageLink
+ * Edit a language link to point to the bi-lingual equivalent of the
+ * current page.
+ */
+$(function () {
+    var links = $('.nav-language > a');
+
+    /**
+     * Join one or more strings together into a single URL path.
+     * @param {string...} Path components to join together.
+     * @return {string}
+     */
+    function joinPath () {
+        var joined;
+
+        for (var i = 0; i < arguments.length; i++) {
+            var path = arguments[i];
+
+            // trim trailing slashes
+            if (path.slice(-1) === '/') {
+                path = path.substr(0, path.length - 1);
+            }
+
+            // trim beginning slashes
+            if (path.slice(0, 1) === '/') {
+                path = path.substr(1, path.length);
+            }
+
+            if (!joined) {
+                joined = path;
+            } else {
+                joined += '/' + path;
+            }
+        }
+
+        return '/' + joined + '/';
+    }
+
+    // iterate over each link on the page and rewrite it
+    for (var i = 0; i < links.length; i++) {
+        var link = $(links[i]),
+            href = link.attr('href'),
+            path = window.location.pathname;
+
+        // ignore home pages for either language - links are OK
+        if (path !== '/' && path !== '/es/') {
+            link.attr('href', joinPath(href, path));
+        }
+    }
+});
+</script>
