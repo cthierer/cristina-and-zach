@@ -3,9 +3,13 @@ en:
     blurb-ceremony: >
         The [**ceremony**](/big-day/ceremony/) is at 2:00 PM, at
         St. John the Evangelist Catholic Church.
+
+        <blockquote>118 E 2nd St, Frederick, MD 21701</blockquote>
     blurb-reception: >
         The [**reception**](/big-day/reception/) is at 5:00 PM,
         at Musket Ridge Golf Club.
+
+        <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
     event: Wedding day
     footer: Footer
     hello: Say hello!
@@ -21,9 +25,13 @@ es:
     blurb-ceremony: >
         The [**ceremony**](/big-day/ceremony/) is at 2:00 PM, at
         St. John the Evangelist Catholic Church.
+
+        <blockquote>118 E 2nd St, Frederick, MD 21701</blockquote>
     blurb-reception: >
         The [**reception**](/big-day/reception/) is at 5:00 PM,
         at Musket Ridge Golf Club.
+
+        <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
     event: Wedding day
     footer: Footer
     hello: Say hello!
