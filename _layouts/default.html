@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,11 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description | escape }}">
     {% endif %}
+    {% if page.date %}
+    <meta name="dcterms.created" scheme="dcterms.w3cdtf" content="{{ page.date | date: "%Y-%m-%d"' }}">
+    {% endif %}
+    <meta name="dcterms.issued" scheme="dcterms.w3cdtf" content="{{ site.time | date: "%Y-%m-%d"' }}">
+
 
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='/lib/css/fonts.css' rel='stylesheet' type='text/css'>

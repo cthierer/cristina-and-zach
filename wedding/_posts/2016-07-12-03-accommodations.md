@@ -4,6 +4,9 @@ layout: article
 permalink: /big-day/accommodations
 published: false
 active-nav: big-day
+description: >
+    Additional information about reserving rooms as part of the group block
+    for Cristina and Zachary's wedding on October 15, 2016. 
 categories:
     - wedding
 ---

@@ -2,6 +2,8 @@
 title: Styles
 layout: basic
 permalink: styles/
+description: >
+    Development style guide for the Cristina and Zachary's wedding website. 
 ---
 
 Overview of the colors, fonts, and other styling properties used on the site.
