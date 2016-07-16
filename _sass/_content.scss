@@ -32,9 +32,16 @@
 
 .panel-list {
     background-color: $color-3;
-    margin: 0;
     margin-bottom: 40px;
-    padding: 0;
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .link-more > * {
+        margin-right: 15px;
+    }
 
     .panel-feature {
         background-color: transparent;
@@ -52,6 +59,10 @@
                 color: $gray-lightest;
                 text-align: center;
             }
+        }
+
+        .panel-body > p {
+            font-size: 1.2em;
         }
     }
 }

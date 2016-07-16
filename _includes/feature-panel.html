@@ -1,0 +1,14 @@
+<div class="panel panel-default panel-feature">
+    {% if include.title %}
+    <div class="panel-heading">
+        <h3 class="panel-title text-upper">
+            {{ include.title }}
+        </h3>
+    </div>
+    {% endif %}
+    {% if include.content %}
+    <div class="panel-body">
+        {{ include.content | markdownify }}
+    </div>
+    {% endif %}
+</div>

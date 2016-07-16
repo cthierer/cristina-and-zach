@@ -6,6 +6,9 @@ layout: basic
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
+{% if page.feature-panels %}
+{% include feature-panels.html panels=page.feature-panels %}
+{% endif %}
 {{ content }}
 <div class="row two-col">
     {% for post in posts limit:2 %}

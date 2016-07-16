@@ -1,0 +1,23 @@
+{% assign numPanels = include.panels | size %}
+{% assign numCols = 12 | divided_by: numPanels | floor %}
+<div class="panel-list">
+    <div class="row">
+        {% for panel in include.panels %}
+        <div class="col-sm-{{ numCols }}">
+            {% include feature-panel.html title=panel.title content=panel.content %}
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        {% for panel in include.panels %}
+        {% if panel.link %}
+        <div class="col-sm-{{ numCols }} link-more">
+            <a href="{{ panel.link }}">
+                {{ site.data.contents[page.lang].more }}
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
