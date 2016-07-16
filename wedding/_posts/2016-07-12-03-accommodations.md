@@ -3,6 +3,7 @@ title: Accommodations
 layout: article
 permalink: /big-day/accommodations
 published: false
+active-nav: big-day
 categories:
     - wedding
 ---

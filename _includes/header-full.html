@@ -11,7 +11,11 @@
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
                         {% if jekyll.environment == "development" or nav.published %}
-                        <li><a href="{{ nav.link[page.lang] }}">{{ nav.title[page.lang] }}</a></li>
+                        <li class="{% if page.active-nav == key %}active{% endif %}">
+                            <a href="{{ nav.link[page.lang] }}">
+                                {{ nav.title[page.lang] }}
+                            </a>
+                        </li>
                         {% assign numLinks = numLinks | plus: 1 %}
                         {% if numLinks >= maxLinks %}
                         {% assign lastIndex = forloop.index %}

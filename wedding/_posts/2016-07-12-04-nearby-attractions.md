@@ -3,6 +3,7 @@ title: Nearby attractions
 layout: article
 permalink: /big-day/nearby
 published: false
+active-nav: big-day
 categories:
     - wedding
 ---
