@@ -1,11 +1,12 @@
 ---
 layout: basic
 ---
+{% assign posts = site.categories[page.category] | reverse %}
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
 {{ content }}
-{% for post in site.categories[page.category] %}
+{% for post in posts %}
 {% include post.html %}
 {% if forloop.last == false %}
 <hr />

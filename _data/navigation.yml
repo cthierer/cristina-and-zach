@@ -7,12 +7,12 @@ lookup:
             en: /
             es: /es/
         published: true
-    story:
+    our-story:
         title:
             en: Our story
             es: Nuestra historia
         link:
-            en: "#"
+            en: /our-story/
             es: "#"
         published: false
     big-day:
@@ -57,12 +57,12 @@ lookup:
         published: true
 main:
     - language
-    - story
+    - our-story
     - big-day
     - registry
     - share
 footer:
-    - story
+    - our-story
     - big-day
     - accommodations
     - registry
