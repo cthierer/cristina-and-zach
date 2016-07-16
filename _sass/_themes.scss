@@ -15,6 +15,11 @@
     background-position: center;
 }
 
+.background-photo-4 {
+    background-image: url('../assets/Dalton-1_w.jpg');
+    background-position: center;
+}
+
 .background-solid-1 {
     background-color: $gray-lightest;
 }
@@ -24,6 +29,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
+    margin-bottom: 20px;
     width: 100%;
 }
 

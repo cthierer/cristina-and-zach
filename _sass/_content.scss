@@ -33,6 +33,7 @@
 .panel-list {
     background-color: $color-3;
     margin-bottom: 40px;
+    margin-top: -20px;
 
     .row {
         margin: 0;
@@ -163,6 +164,10 @@ dl.timeline {
         font-size: .9em;
         margin-top: 1.5px;
     }
+}
+
+.btn.link-registry {
+    width: 100%;
 }
 
 @media (min-width: 768px) {

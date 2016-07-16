@@ -28,7 +28,7 @@ lookup:
             en: Registry
             es: Registro
         link:
-            en: "#"
+            en: /registry/
             es: "#"
         published: false
     share:
