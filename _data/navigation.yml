@@ -47,16 +47,7 @@ lookup:
             en: /big-day/#/wedding/03-accommodations.html
             es: /es/big-day/#/wedding/03-accommodations.html
         published: false
-    language:
-        title:
-            en: Español
-            es: English
-        link:
-            en: /es/
-            es: /
-        published: true
 main:
-    - language
     - our-story
     - big-day
     - registry

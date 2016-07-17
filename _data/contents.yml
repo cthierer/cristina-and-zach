@@ -17,6 +17,7 @@ en:
     hello: Say hello!
     her: Cristina
     him: Zachary
+    language: Español
     links: Links
     more: More
     remaining: remaining
@@ -42,6 +43,7 @@ es:
     hello: Say hello!
     her: Cristina
     him: Zachary
+    language: English
     links: Links
     more: Mas
     remaining: remaining
