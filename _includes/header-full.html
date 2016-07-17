@@ -72,13 +72,13 @@
                     {% endif %}
                 </div>
             </div>
+            {% if numCounterparts > 0 %}
             <div class="nav-language hidden-xs">
-                {% if numCounterparts > 0 %}
                 <a class="nav-language" href="{{ counterpart[0].url }}">
                     {{ site.data.contents[page.lang].language }}
                 </a>
-                {% endif %}
             </div>
+            {% endif %}
             <div class="visible-xs-block">
                 <div id="main-nav" class="collapse navabar-collapse">
                     <ul class="nav navbar-nav">
@@ -97,7 +97,7 @@
                             <a href="{{ counterpart[0].url }}">
                                 {{ site.data.contents[page.lang].language }}
                             </a>
-                        </div>
+                        </li>
                         {% endif %}
                     </ul>
                 </div>
