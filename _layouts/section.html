@@ -19,7 +19,7 @@ layout: basic
             <ul class="nav nav-pills">
                 {% for post in posts %}
                 <li role="presentation">
-                    <a href="#{{ post.url }}">{{ post.title }}</a>
+                    <a href="#{{ post.url | replace:".html","" }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -32,7 +32,8 @@ layout: basic
 {% for post in posts limit:2 %}
 <div class="row">
     <div class="col-sm-12">
-        {% include post.html post=post mirror=forloop.last id=post.url %}
+        {% assign postId = post.url | replace:".html","" %}
+        {% include post.html post=post mirror=forloop.last id=postId %}
     </div>
 </div>
 <hr />
