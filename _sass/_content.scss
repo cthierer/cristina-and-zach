@@ -45,7 +45,7 @@
         margin: 0;
         padding: 0;
 
-        & > *:first-child {
+        & > .feature-main {
             font-family: $font-script;
             font-size: 2em;
             text-align: center;
@@ -59,6 +59,23 @@
         & > *:last-child {
             background-color: $color-3;
             border: 1px solid $color-3;
+            color: $gray-darker;
+        }
+    }
+
+    .nav-pills {
+        font-family: $font-header;
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+        li,
+        a {
+            color: $color-1;
+        }
+
+        li:hover,
+        a:hover,
+        a:active {
             color: $gray-darker;
         }
     }
@@ -172,12 +189,6 @@ dl.timeline {
     .feature-nav {
         & > .row > * {
             padding: 10px;
-        }
-
-        .nav-pills {
-            font-family: $font-header;
-            font-size: 1.2em;
-            text-transform: uppercase;
         }
     }
 
