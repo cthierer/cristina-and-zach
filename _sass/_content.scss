@@ -48,6 +48,8 @@
         & > .feature-main {
             font-family: $font-script;
             font-size: 2em;
+            padding-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
 
             p {
@@ -68,6 +70,10 @@
         font-size: 1.2em;
         text-transform: uppercase;
 
+        & > li {
+            float: none;
+        }
+
         li,
         a {
             color: $color-1;
@@ -78,6 +84,11 @@
         a:active {
             color: $gray-darker;
         }
+    }
+
+    .nav > li > a {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -187,8 +198,23 @@ dl.timeline {
     }
 
     .feature-nav {
-        & > .row > * {
-            padding: 10px;
+        & > .row {
+            & > * {
+                padding: 10px;
+            }
+
+            & > .feature-main {
+                padding-top: 14px;
+            }
+        }
+
+        .nav-pills > li {
+            float: left;
+        }
+
+        .nav > li > a {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 
