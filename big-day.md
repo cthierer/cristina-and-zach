@@ -2,7 +2,6 @@
 title: The big day
 layout: section
 collection: wedding
-permalink: big-day/
 theme: background-photo-2
 published: false
 active-nav: big-day

@@ -1,7 +1,6 @@
 ---
 title: Gift registry
 layout: section-index
-permalink: registry/
 theme: background-photo-4
 published: false
 active-nav: registry
