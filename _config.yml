@@ -4,8 +4,14 @@ url: "https://www.bersteinwithlove.com"
 contact: "hello@bersteinwithlove.com"
 keys:
     google-maps: AIzaSyDrD_iLTZozQ0COxNAWTCsSV7MloGaLDD8
+collections:
+    - people
+    - our-story
+    - registries
+    - wedding
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, README.md, Vagrantfile]
 gems:

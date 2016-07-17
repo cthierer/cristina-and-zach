@@ -1,13 +1,13 @@
 ---
 layout: basic
 ---
-{% assign posts = site.categories[page.category] | reverse %}
+{% assign posts = site[page.collection] %}
 {% assign numPosts = posts | size %}
 {% assign numRows = numPosts | divided_by: 2 | ceil | minus: 1 %}
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
-{% if numPosts > 1 %}
+{% if numPosts > 0 %}
 <div class="feature-nav">
     <div class="row">
         {% if page.feature-main %}
@@ -19,7 +19,7 @@ layout: basic
             <ul class="nav nav-pills">
                 {% for post in posts %}
                 <li role="presentation">
-                    <a href="#{{ post.id }}">{{ post.title }}</a>
+                    <a href="#{{ post.url }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -28,10 +28,11 @@ layout: basic
 </div>
 {% endif %}
 {{ content }}
+<hr />
 {% for post in posts limit:2 %}
 <div class="row">
     <div class="col-sm-12">
-        {% include post.html post=post mirror=forloop.last %}
+        {% include post.html post=post mirror=forloop.last id=post.url %}
     </div>
 </div>
 <hr />
@@ -41,7 +42,7 @@ layout: basic
 <div class="row two-col">
     {% for post in posts limit:2 offset:offset %}
     <div class="col-sm-6">
-        {% include post.html post=post %}
+        {% include post.html post=post id=post.url %}
     </div>
     <hr class="visible-xs-block" />
     {% endfor %}

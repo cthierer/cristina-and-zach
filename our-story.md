@@ -1,13 +1,13 @@
 ---
-title: In the beginning...
-layout: article
-permalink: /our-story/story
+title: Our story
+layout: section
+collection: our-story
+theme: background-photo-3
 published: false
 active-nav: our-story
 description: >
-    The story of how Cristina and Zachary met.
-categories:
-    - about
+    The story of how Cristina and Zachary met and fell for eachother, and
+    the people who will be at their sides on their wedding day.
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
 pellentesque nisl, vitae euismod sapien varius et. In eu posuere lacus, eget

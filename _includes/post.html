@@ -1,10 +1,10 @@
 {% assign sidebar = include.post.sidebar %}
 {% assign post = include.post %}
-<article class="post{% if include.mirror %} mirrored{% endif %}">
+<article {% if include.id %}id="{{ include.id }}"{% endif %} class="post{% if include.mirror %} mirrored{% endif %}">
     <div class="row">
         <div class="col-sm-12">
             <header>
-                <h3 class="header" id="{{ post.id}}">
+                <h3 class="header">
                     {{ post.title }}
                 </h3>
             </header>

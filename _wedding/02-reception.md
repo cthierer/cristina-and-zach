@@ -1,18 +1,10 @@
 ---
 title: Reception
-layout: article
-permalink: /big-day/reception
 published: false
-active-nav: big-day
-description: >
-    Time, place, and parking details for Cristina and Zachary's wedding
-    reception on October 15, 2016.
 sidebar:
     include: map.html
     params:
         place: "ChIJr1C1SpbCyYkRGqrNhVmmzvU"
-categories:
-    - wedding
 ---
 
 The reception starts at **5:00 pm** with a cocktail hour at

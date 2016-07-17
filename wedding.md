@@ -1,7 +1,7 @@
 ---
 title: The big day
 layout: section
-category: wedding
+collection: wedding
 permalink: big-day/
 theme: background-photo-2
 published: false
@@ -10,14 +10,4 @@ description: >
     Details and hotel accommodation information for Cristina and Zachary's
     wedding ceremony and reception on October 15, 2016.
 feature-main: <span class="countdown" data-date="2016-10-15">Saturday, October 15</span>
-feature-panels:
-    -
-        title: Ceremony
-        link: "#/big-day/01-ceremony"
-    -
-        title: Reception
-        link: "#/big-day/02-reception"
-    -
-        title: Accommodations
-        link: "#/big-day/03-accommodations"
 ---

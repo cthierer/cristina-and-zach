@@ -1,18 +1,10 @@
 ---
 title: Ceremony
-layout: article
-permalink: /big-day/ceremony
 published: false
-active-nav: big-day
-description: >
-    Time, place, and parking information for Cristina and Zachary's wedding
-    ceremony on October 15, 2016.
 sidebar:
     include: map.html
     params:
         place: "ChIJgYvB2VjayYkRJ0CahWOUkHY"
-categories:
-    - wedding
 ---
 
 Join us at **2:00 pm** for the ceremony at

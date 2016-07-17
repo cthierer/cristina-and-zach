@@ -1,0 +1,17 @@
+---
+layout: basic
+---
+{% assign posts = site[page.collection] %}
+{% if page.theme %}
+<div class="feature-image {{page.theme}}"></div>
+{% endif %}
+{{ content }}
+<div class="row">
+    {% for post in posts limit:2 %}
+    <div class="col-sm-4{% if forloop.first %} col-sm-offset-2{% endif %}">
+        <a class="btn btn-lg btn-default link-registry" href="{{ post.link }}">
+            {{ post.title | escape }}
+        </a>
+    </div>
+    {% endfor %}
+</div>

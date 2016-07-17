@@ -1,11 +1,6 @@
 ---
 title: Nearby attractions
-layout: article
-permalink: /big-day/nearby
 published: false
-active-nav: big-day
-categories:
-    - wedding
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at feugiat metus.
 Curabitur posuere venenatis leo, venenatis finibus felis rhoncus a. Curabitur
