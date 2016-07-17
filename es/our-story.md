@@ -1,5 +1,6 @@
 ---
 title: Our story
+lang: es
 layout: section
 articles: our-story
 theme: background-photo-3

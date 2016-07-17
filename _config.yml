@@ -5,12 +5,6 @@ contact: "hello@bersteinwithlove.com"
 keys:
     google-maps: AIzaSyDrD_iLTZozQ0COxNAWTCsSV7MloGaLDD8
 collections:
-    en:
-        output: true
-        permalink: /:path/
-    es:
-        output: true
-        permalink: /es/:path/
     people:
         output: false
     our-story:

@@ -122,7 +122,8 @@
 }
 
 .map {
-    border: 1px solid $gray-darkest;
+    border: 1px solid $gray-lighter;
+    box-shadow: 1px 1px 5px $gray-normal;
     float: right;
     margin: 1em 0 1.5em;
     max-width: 550px;

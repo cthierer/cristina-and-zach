@@ -1,5 +1,6 @@
 ---
 title: Gift registry
+lang: es
 layout: section-index
 theme: background-photo-4
 published: false

@@ -8,7 +8,7 @@
 {% assign translated = "es" %}
 {% assign path = "/es" | append:page.url %}
 {% endif %}
-{% assign counterpart = site.documents | where:"lang",translated | where:"url",path %}
+{% assign counterpart = site.pages | where:"lang",translated | where:"url",path %}
 {% assign numCounterparts = counterpart | size %}
 <div class="title-bar text-header">
     <nav class="navbar navbar-default">

@@ -1,5 +1,6 @@
 ---
 title: The big day
+lang: es
 layout: section
 articles: wedding
 theme: background-photo-2
