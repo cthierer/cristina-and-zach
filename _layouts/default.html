@@ -37,5 +37,42 @@
             {% include footer-basic.html %}
         </footer>
     </div>
+    <script type="text/javascript">
+    /**
+     * @module com.christhierer.dev.page.countdown
+     * Replaces coutndown blocks with countdowns to specified dates.
+     */
+    $(function () {
+        /**
+         * @constant
+         * @type {object}
+         * Lookup object of terms used in the countdown.
+         */
+        const content = {
+            day: "{{ site.data.contents[page.lang].day }}",
+            days: "{{ site.data.contents[page.lang].days }}",
+            remaining: "{{ site.data.contents[page.lang].remaining }}"
+        };
+
+        var countdowns = $('.countdown');
+
+        // iterate over each countdown block
+        // calculate the number of days, and update
+        for (var i = 0; i < countdowns.length; i++) {
+            var countdown = $(countdowns[i]),
+                date = Date.parse(countdown.data('date')),
+                today = new Date(),
+                diff = Math.ceil((date - today) / 86400000);
+
+            if (diff > 0) {
+                var days = (diff < 2) ? content.day : content.days;
+                countdown.empty().append('<p>' + diff + ' ' + days + ' ' +
+                    content.remaining + '</p>');
+            }
+
+            // if negative number of days, do nothing
+        }
+    });
+    </script>
   </body>
 </html>

@@ -10,6 +10,8 @@ en:
         at Musket Ridge Golf Club.
 
         <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
+    day: day
+    days: days
     event: Wedding day
     footer: Footer
     hello: Say hello!
@@ -17,6 +19,7 @@ en:
     him: Zachary
     links: Links
     more: More
+    remaining: remaining
     updated-on: Last updated
     title: Cristina & Zachary's wedding website
     toggle-navigation: Toggle navigation
@@ -32,6 +35,8 @@ es:
         at Musket Ridge Golf Club.
 
         <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
+    day: day
+    days: days
     event: Wedding day
     footer: Footer
     hello: Say hello!
@@ -39,6 +44,7 @@ es:
     him: Zachary
     links: Links
     more: Mas
+    remaining: remaining
     updated-on: Última actualización
     title: El web de boda de Cristina & Zachary
     toggle-navigation: Mostrar navegación
