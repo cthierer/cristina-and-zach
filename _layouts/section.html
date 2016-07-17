@@ -43,7 +43,8 @@ layout: basic
 <div class="row two-col">
     {% for post in posts limit:2 offset:offset %}
     <div class="col-sm-6">
-        {% include post.html post=post id=post.url %}
+        {% assign postId = post.url | replace:".html","" %}
+        {% include post.html post=post id=postId %}
     </div>
     <hr class="visible-xs-block" />
     {% endfor %}
