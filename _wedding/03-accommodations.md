@@ -1,5 +1,6 @@
 ---
 title: Accommodations
+lang: en
 published: false
 ---
 

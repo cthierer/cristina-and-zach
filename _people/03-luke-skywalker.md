@@ -1,5 +1,6 @@
 ---
 title: Luke Skywalker
+lang: en
 organization: groomsmen
 avatar: person.png
 ---

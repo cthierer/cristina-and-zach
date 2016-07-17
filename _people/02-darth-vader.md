@@ -1,5 +1,6 @@
 ---
 title: Darth Vader
+lang: en
 organization: groomsmen
 avatar: person.png
 ---

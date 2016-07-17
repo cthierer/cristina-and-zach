@@ -1,7 +1,7 @@
 ---
 layout: basic
 ---
-{% assign posts = site[page.collection] %}
+{% assign posts = site[page.articles] | where:"lang",page.lang %}
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}

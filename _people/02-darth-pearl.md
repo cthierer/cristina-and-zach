@@ -1,5 +1,6 @@
 ---
 title: Darth Pearl
+lang: en
 organization: bridesmaids
 avatar: person.png
 ---

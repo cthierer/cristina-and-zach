@@ -1,5 +1,6 @@
 ---
 title: Rey Kenobi
+lang: en
 organization: bridesmaids
 avatar: person.png
 ---

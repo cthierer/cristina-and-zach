@@ -13,7 +13,7 @@ lookup:
             es: Nuestra historia
         link:
             en: /our-story/
-            es: "#"
+            es: /es/our-story/
         published: false
     big-day:
         title:
@@ -21,7 +21,7 @@ lookup:
             es: Gran día
         link:
             en: /big-day/
-            es: "#"
+            es: /es/big-day/
         published: false
     registry:
         title:
@@ -29,7 +29,7 @@ lookup:
             es: Registro
         link:
             en: /registry/
-            es: "#"
+            es: /es/registry/
         published: false
     share:
         title:
@@ -44,8 +44,8 @@ lookup:
             en: Accommodations
             es: Accommodations
         link:
-            en: /big-day/accommodations/
-            es: "#"
+            en: /big-day/#/wedding/03-accommodations.html
+            es: /es/big-day/#/wedding/03-accommodations.html
         published: false
     language:
         title:

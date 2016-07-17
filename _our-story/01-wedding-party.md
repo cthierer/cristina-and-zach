@@ -1,5 +1,6 @@
 ---
 title: Wedding party
+lang: en
 published: false
 ---
 {% assign bridesmaids = site.people | where:"organization","bridesmaids" %}

@@ -1,5 +1,6 @@
 ---
 title: Nearby attractions
+lang: en
 published: false
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at feugiat metus.

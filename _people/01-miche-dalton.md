@@ -1,5 +1,6 @@
 ---
 title: Miche Dalton
+lang: en
 role: Maid of honor
 organization: bridesmaids
 avatar: person.png

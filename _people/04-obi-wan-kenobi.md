@@ -1,5 +1,6 @@
 ---
 title: Obi Wan Kenobi
+lang: en
 organization: groomsmen
 avatar: person.png
 ---

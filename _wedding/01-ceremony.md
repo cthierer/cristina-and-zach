@@ -1,5 +1,6 @@
 ---
 title: Ceremony
+lang: en
 published: false
 sidebar:
     include: map.html

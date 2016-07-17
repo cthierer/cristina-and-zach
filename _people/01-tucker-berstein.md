@@ -1,5 +1,6 @@
 ---
 title: Tucker Berstein
+lang: en
 role: Best man
 organization: groomsmen
 avatar: person.png

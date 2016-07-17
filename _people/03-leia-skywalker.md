@@ -1,5 +1,6 @@
 ---
 title: Leia Skywalker
+lang: en
 organization: bridesmaids
 avatar: person.png
 ---

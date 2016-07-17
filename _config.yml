@@ -5,10 +5,17 @@ contact: "hello@bersteinwithlove.com"
 keys:
     google-maps: AIzaSyDrD_iLTZozQ0COxNAWTCsSV7MloGaLDD8
 collections:
-    - people
-    - our-story
-    - registries
-    - wedding
+    es:
+        output: true
+        permalink: /es/:path/
+    people:
+        output: false
+    our-story:
+        output: false
+    registries:
+        output: false
+    wedding:
+        output: false
 
 # Build settings
 permalink: pretty
@@ -24,3 +31,9 @@ defaults:
             path: ""
         values:
             lang: "en"
+    -
+        scope:
+            path: ""
+            type: es
+        values:
+            lang: "es"

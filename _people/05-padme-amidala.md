@@ -1,5 +1,6 @@
 ---
 title: Padme Amidala
+lang: en
 organization: bridesmaids
 avatar: person.png
 ---

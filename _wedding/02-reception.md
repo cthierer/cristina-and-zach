@@ -1,5 +1,6 @@
 ---
 title: Reception
+lang: en
 published: false
 sidebar:
     include: map.html
