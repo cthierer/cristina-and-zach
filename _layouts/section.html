@@ -9,7 +9,7 @@ layout: basic
 {{ content }}
 {% if numPosts > 1 %}
 {% for post in posts %}
-{% include post.html %}
+{% include post.html post=post %}
 {% if forloop.last == false %}
 <hr />
 {% endif %}

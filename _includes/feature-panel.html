@@ -1,26 +1,4 @@
-<div class="panel panel-default panel-feature">
-    {% if include.title %}
-    <div class="panel-heading">
-        <h3 class="panel-title text-upper">
-            {{ include.title }}
-        </h3>
-    </div>
-    {% endif %}
-    {% if include.content %}
-    <div class="panel-body">
-        {{ include.content | markdownify }}
-        {% if include.link %}
-        <div class="col-sm-{{ numCols }} link-more visible-xs-block">
-            <a href="{{ include.link }}">
-                {% if include.link-text %}
-                {{ include.link-text | escape }}
-                {% else %}
-                {{ site.data.contents[page.lang].more }}
-                {% endif %}
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-            </a>
-        </div>
-        {% endif %}
-    </div>
-    {% endif %}
-</div>
+<a class="btn btn-default btn-lg text-header" href="{{ include.link }}">
+    {{ include.title }}
+    <span class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+</a>

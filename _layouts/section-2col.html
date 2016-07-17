@@ -7,16 +7,39 @@ layout: basic
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
-{% if page.feature-panels %}
-{% include feature-panels.html panels=page.feature-panels %}
+{% if page.feature-main %}
+<div class="feature-nav">
+    <div class="row">
+        <div class="col-sm-4">
+            {{ page.feature-main | markdownify }}
+        </div>
+        <div class="col-sm-8">
+            <ul class="nav nav-pills">
+                {% for post in posts %}
+                <li role="presentation">
+                    <a href="#{{ post.id }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
 {% endif %}
 {{ content }}
-{% for i in (0..numRows) %}
+{% for post in posts limit:2 %}
+<div class="row">
+    <div class="col-sm-12">
+        {% include post.html post=post mirror=forloop.last %}
+    </div>
+</div>
+<hr />
+{% endfor %}
+{% for i in (1..numRows) %}
 {% assign offset = i | times:2 %}
 <div class="row two-col">
     {% for post in posts limit:2 offset:offset %}
     <div class="col-sm-6">
-        {% include post.html %}
+        {% include post.html post=post %}
     </div>
     <hr class="visible-xs-block" />
     {% endfor %}

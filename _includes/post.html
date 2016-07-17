@@ -1,14 +1,38 @@
-<article class="post">
-    <header>
-        <h3 class="header" id="{{ post.id}}">
-            {{ post.title }}
-        </h3>
-    </header>
-    {{ post.content }}
-    <footer>
-        <a href="#">
-            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-            {{ site.data.contents[page.lang].back-to-top }}
-        </a>
-    </footer>
+{% assign sidebar = include.post.sidebar %}
+{% assign post = include.post %}
+<article class="post{% if include.mirror %} mirrored{% endif %}">
+    <div class="row">
+        <div class="col-sm-12">
+            <header>
+                <h3 class="header" id="{{ post.id}}">
+                    {{ post.title }}
+                </h3>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-{% if sidebar %}6{% if include.mirror %} col-sm-push-6{% endif %}{% else %}12{% endif %}">
+            {{ post.content }}
+        </div>
+        {% if sidebar %}
+        <div class="col-sm-6{% if include.mirror %} col-sm-pull-6{% endif %}">
+            {% if sidebar.include %}
+            {% include {{ sidebar.include }} params=sidebar.params %}
+            {% endif %}
+            {% if sidebar.content %}
+            {{ sidebar.content | markdownify }}
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <a href="#">
+                    <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                    {{ site.data.contents[page.lang].back-to-top }}
+                </a>
+            </footer>
+        </div>
+    </div>
 </article>

@@ -30,40 +30,36 @@
     }
 }
 
-.panel-list {
+.feature-nav {
     background-color: $color-3;
     margin-bottom: 40px;
     margin-top: -20px;
 
-    .row {
+    .btn {
+        width: 100%;
+    }
+
+    & > .row {
+        background-color: $color-1;
+        color: $gray-lighter;
         margin: 0;
         padding: 0;
-    }
 
-    .link-more > * {
-        margin-right: 15px;
-    }
+        & > *:first-child {
+            font-family: $font-script;
+            font-size: 2em;
+            text-align: center;
 
-    .panel-feature {
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        margin-bottom: 0;
-
-        .panel-heading {
-            background-color: $color-1;
-            border-color: $color-3;
-            border-radius: 0px;
-
-            .panel-title {
-                font-size: 1.5em;
-                color: $gray-lightest;
-                text-align: center;
+            p {
+                margin: 0;
+                padding: 0;
             }
         }
 
-        .panel-body > p {
-            font-size: 1.2em;
+        & > *:last-child {
+            background-color: $color-3;
+            border: 1px solid $color-3;
+            color: $gray-darker;
         }
     }
 }
@@ -99,7 +95,9 @@
 
 .map {
     border: 1px solid $gray-darkest;
+    float: right;
     margin: 1em 0 1.5em;
+    max-width: 550px;
     width: 100%;
 }
 
@@ -142,21 +140,12 @@ dl.timeline {
     background-color: $color-3;
     border-left: 25px solid $color-1;
     color: $gray-darkest;
-    max-width: 350px;
+    max-width: 480px;
     padding-left: 10px;
 }
 
-.two-col {
-    .header {
-        border-bottom: 1px solid $gray-lighter;
-        color: $color-1;
-        font-size: 1.8em;
-        padding-bottom: 3px;
-    }
-
-    .place {
-        font-size: 1.3em;
-    }
+.place {
+    font-size: 1.3em;
 }
 
 .post {
@@ -176,16 +165,19 @@ dl.timeline {
     }
 
     .address {
-        border-left-width: 60px;
         margin-left: 25px;
         margin-right: 25px;
     }
 
-    .panel-list {
-        padding: 20px 0;
+    .feature-nav {
+        & > .row > * {
+            padding: 10px;
+        }
 
-        .panel-feature .panel-heading {
-            border-radius: 4px;
+        .nav-pills {
+            font-family: $font-header;
+            font-size: 1.2em;
+            text-transform: uppercase;
         }
     }
 
@@ -195,7 +187,7 @@ dl.timeline {
 }
 
 @media (max-width: 768px) {
-    .panel-list {
+    .feature-nav {
         .col-sm-4 {
             padding-left: 0;
             padding-right: 0;
