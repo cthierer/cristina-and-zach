@@ -1,19 +1,20 @@
 en:
     back-to-top: Back to top
-    blurb-ceremony: >
+    blurb-footer: >
         The [**ceremony**](/big-day/#/wedding/01-ceremony.html) is at 2:00 PM,
         at St. John the Evangelist Catholic Church.
 
         <blockquote>118 E 2nd St, Frederick, MD 21701</blockquote>
-    blurb-reception: >
+
         The [**reception**](/big-day/#/wedding/02-reception.html) is at
         5:00 PM, at Musket Ridge Golf Club.
 
         <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
     day: day
     days: days
-    event: Wedding day
     footer: Footer
+    header-footer: Wedding day
+    header-footer-link: /big-day/
     hello: Say hello!
     her: Cristina
     him: Zachary
@@ -26,20 +27,21 @@ en:
     toggle-navigation: Toggle navigation
 es:
     back-to-top: Back to top
-    blurb-ceremony: >
+    blurb-footer: >
         The [**ceremony**](/es/big-day/#/wedding/01-ceremony.html) is at
         2:00 PM, at St. John the Evangelist Catholic Church.
 
         <blockquote>118 E 2nd St, Frederick, MD 21701</blockquote>
-    blurb-reception: >
+
         The [**reception**](/es/big-day/#/wedding/02-reception.html) is at
         5:00 PM, at Musket Ridge Golf Club.
 
         <blockquote>3555 Brethren Church Rd, Myersville, MD 21773</blockquote>
     day: day
     days: days
-    event: Wedding day
     footer: Footer
+    header-footer: Wedding day
+    header-footer-link: /es/big-day/
     hello: Say hello!
     her: Cristina
     him: Zachary

@@ -6,13 +6,12 @@
         <div class="row">
             <div class="col-sm-4">
                 <h3 class="header">
-                    <a href="{% if page.lang != "en" %}/{{ page.lang }}{% endif %}/big-day/">
-                        {{ site.data.contents[page.lang].event}}
+                    <a href="{{ site.data.contents[page.lang].header-footer-link }}">
+                        {{ site.data.contents[page.lang].header-footer}}
                         <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="font-size:15px;"></span>
                     </a>
                 </h3>
-                {{ site.data.contents[page.lang].blurb-ceremony | markdownify }}
-                {{ site.data.contents[page.lang].blurb-reception | markdownify }}
+                {{ site.data.contents[page.lang].blurb-footer | markdownify }}
             </div>
             <hr class="visible-xs-block" />
             <div class="col-sm-4 text-right-full">
