@@ -33,6 +33,8 @@ Site navigation is defined in the `_data/navigation.yml` file.
   one or more documents from a collection on a single page.
 * `landing.html`: a landing page, featuring a large banner that stretches to
   cover the full screen.
+* `feature.html`: a feature page, which includes a large jumbotron in place of
+  a page title or image.
 
 ### Collections
 
