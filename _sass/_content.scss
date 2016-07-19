@@ -188,6 +188,11 @@ dl.timeline {
     width: 100%;
 }
 
+.hashtag {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-weight: 700;
+}
+
 @media (min-width: 768px) {
     dl.timeline {
         margin: 20px;

@@ -1,0 +1,61 @@
+
+.feature-page-wrapper {
+    background-image: radial-gradient(circle at bottom right,$color-2,$color-1);
+    margin-bottom: 30px;
+}
+
+.feature-page {
+
+    &.jumbotron {
+        background-color: transparent;
+        color: $gray-lighter;
+        margin-bottom: 0;
+
+        p {
+            font-size: 19px;
+        }
+
+        .page-header {
+            border-bottom: none;
+            font-size: 55px;
+            text-transform: lowercase;
+        }
+    }
+
+    .feature {
+        font-family: $font-header;
+        text-align: center;
+
+        small {
+            font-style: italic;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .feature-page {
+
+        &.jumbotron {
+            p {
+                font-size: 21px;
+            }
+
+            .page-header {
+                font-size: 110px;
+                margin-bottom: 0;
+                margin-top: 160px;;
+                padding: 0;
+            }
+        }
+
+        .feature {
+            font-size: 1.8em;
+            line-height: 1.6em;
+            margin-top: 50px;
+
+            .hashtag {
+                font-size: 1.4em;
+            }
+        }
+    }
+}

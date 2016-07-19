@@ -36,8 +36,8 @@ lookup:
             en: Share memories
             es: Comparta recuerdos
         link:
-            en: "#"
-            es: "#"
+            en: /share/
+            es: /es/share/
         published: false
     accommodations:
         title:
