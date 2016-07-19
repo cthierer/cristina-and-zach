@@ -22,6 +22,10 @@ en:
     links: Links
     more: More
     remaining: remaining
+    share: Share
+    tags:
+        - "#BersteinWithLove"
+        - "#BeautyAndTheBerstein"
     updated-on: Last updated
     title: Cristina & Zachary's wedding website
     toggle-navigation: Toggle navigation
@@ -49,6 +53,10 @@ es:
     links: Links
     more: Mas
     remaining: remaining
+    share: Share
+    tags:
+        - "#BersteinWithLove"
+        - "#BeautyAndTheBerstein"
     updated-on: Última actualización
     title: El web de boda de Cristina & Zachary
     toggle-navigation: Mostrar navegación
