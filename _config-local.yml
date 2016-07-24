@@ -1,4 +1,4 @@
 # Site settings
 url: "http://localhost:4000"
 unpublished: true
-api: "http://dev-api.bersteinwithlove.com"
+api: "https://serene-spire-67138.herokuapp.com/"
