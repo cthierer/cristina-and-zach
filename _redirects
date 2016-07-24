@@ -1,0 +1,4 @@
+---
+---
+# mount the API
+/api/*  {{ site.api }}/:splat  200
