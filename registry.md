@@ -2,7 +2,7 @@
 title: Gift registry
 layout: section-index
 theme: background-photo-4
-published: false
+published: true
 active-nav: registry
 articles: registries
 description: >

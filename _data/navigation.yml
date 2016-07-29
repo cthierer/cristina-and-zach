@@ -14,7 +14,7 @@ lookup:
         link:
             en: /our-story/
             es: /es/our-story/
-        published: false
+        published: true
     big-day:
         title:
             en: Big day
@@ -22,7 +22,7 @@ lookup:
         link:
             en: /big-day/
             es: /es/big-day/
-        published: false
+        published: true
     registry:
         title:
             en: Registry
@@ -30,7 +30,7 @@ lookup:
         link:
             en: /registry/
             es: /es/registry/
-        published: false
+        published: true
     share:
         title:
             en: Share memories
