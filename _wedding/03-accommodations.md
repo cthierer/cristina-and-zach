@@ -2,6 +2,10 @@
 title: Accommodations
 lang: en
 published: true
+sidebar:
+    include: map.html
+    params:
+        place: "ChIJQdnWIijayYkRAHaoYt_L31M"
 ---
 
 The
