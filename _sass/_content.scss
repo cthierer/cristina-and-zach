@@ -1,8 +1,11 @@
+p {
+    font-size: 16px;
+}
 
 .page-section {
 
     p {
-        line-height: 1.5em;
+        line-height: 1.8em;
     }
 
     .header-wrapper {
@@ -194,6 +197,10 @@ dl.timeline {
 }
 
 @media (min-width: 768px) {
+    .page-section p img.pull-right {
+        margin-left: 20px;
+    }
+
     dl.timeline {
         margin: 20px;
     }
