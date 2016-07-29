@@ -4,17 +4,23 @@
             {{ site.data.contents[page.lang].footer }}
         </h2>
         <div class="row">
+            {% if site.data.contents[page.lang].blurb-footer %}
             <div class="col-sm-4">
                 <h3 class="header">
+                    {% if site.data.contents[page.lang].header-footer-link %}
                     <a href="{{ site.data.contents[page.lang].header-footer-link }}">
-                        {{ site.data.contents[page.lang].header-footer}}
-                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="font-size:15px;"></span>
+                    {% endif %}
+                    {{ site.data.contents[page.lang].header-footer}}
+                    {% if site.data.contents[page.lang].header-footer-link %}
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="font-size:15px;"></span>
                     </a>
+                    {% endif %}
                 </h3>
                 {{ site.data.contents[page.lang].blurb-footer | markdownify }}
             </div>
             <hr class="visible-xs-block" />
-            <div class="col-sm-4 text-right-full">
+            {% endif %}
+            <div class="col-sm-4 text-right-full{% unless site.data.contents[page.lang].blurb-footer %} col-sm-offset-4{% endunless %}">
                 <h3 class="header" style="margin-right:15px;">
                     {{ site.data.contents[page.lang].links }}
                 </h3>
@@ -43,11 +49,16 @@
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="margin-right:5px;"></span>
                     {{ site.contact }}
                 </a>
+                {% if site.data.contents[page.lang].share %}
                 <h3 class="header">
-                    <a href="{{ site.data.navigation.lookup.share.link[page.lang] }}">
-                        {{ site.data.contents[page.lang].share | escape }}
-                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="font-size:15px;"></span>
+                    {% if site.data.contents[page.lang].share-link %}
+                    <a href="{{ site.data.contents[page.lang].share-link }}">
+                    {% endif %}
+                    {{ site.data.contents[page.lang].share | escape }}
+                    {% if site.data.contents[page.lang].share-link %}
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="font-size:15px;"></span>
                     </a>
+                    {% endif %}
                 </h3>
                 <ul class="list-unstyled">
                     {% for tag in site.data.contents[page.lang].tags %}
@@ -58,6 +69,7 @@
                     </li>
                     {% endfor %}
                 </ul>
+                {% endif %}
             </div>
         </div>
         {% if jekyll.environment == "development" %}
