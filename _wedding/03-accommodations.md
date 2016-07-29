@@ -1,7 +1,7 @@
 ---
 title: Accommodations
 lang: en
-published: false
+published: true
 ---
 
 The

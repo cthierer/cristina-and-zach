@@ -1,7 +1,7 @@
 ---
 title: Ceremony
 lang: en
-published: false
+published: true
 sidebar:
     include: map.html
     params:
