@@ -72,8 +72,7 @@
 
             if (diff > 0) {
                 var days = (diff < 2) ? content.day : content.days;
-                countdown.empty().append('<p>' + diff + ' ' + days + ' ' +
-                    content.remaining + '</p>');
+                countdown.empty().append(diff + ' ' + days + ' ' + content.remaining);
             }
 
             // if negative number of days, do nothing
