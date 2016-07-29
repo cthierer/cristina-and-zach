@@ -1,9 +1,9 @@
 ---
 layout: basic
 ---
-{% assign posts = site[page.articles] | where:"lang",page.lang %}
+{% assign posts = site[page.articles] | where:"lang",page.lang | where:"published",true %}
 {% assign numPosts = posts | size %}
-{% assign numRows = numPosts | divided_by: 2 | ceil | minus: 1 %}
+{% assign numRows = numPosts | divided_by: 2 | ceil %}
 {% if page.theme %}
 <div class="feature-image {{page.theme}}"></div>
 {% endif %}
@@ -60,7 +60,7 @@ layout: basic
 {% assign offset = i | times:2 %}
 <div class="row two-col">
     {% for post in posts limit:2 offset:offset %}
-    <div class="col-sm-6">
+    <div class="col-sm-{% if forloop.last && forloop.first %}12{% else %}6{% endif %}">
         {% assign postId = post.url | replace:".html","" %}
         {% include post.html post=post id=postId %}
     </div>
