@@ -13,7 +13,7 @@ It all started when Cristina and Zach briefly met at Chris's house one summer
 before they all went back to school.
 {: .lead }
 
-That year, Zach kept finding reasons to visit Christ at UMBC (he swears his
+That year, Zach kept finding reasons to visit Chris at UMBC (he swears his
 laptop was broken), and Cristina kept finding reasons to call Zach from Chris's
 phone. Cristina and Zach started dating that year, and the rest is history!
 
