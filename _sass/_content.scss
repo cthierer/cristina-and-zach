@@ -1,13 +1,16 @@
+p {
+    font-size: 16px;
+}
 
 .page-section {
 
     p {
-        line-height: 1.5em;
+        line-height: 1.8em;
     }
 
     .header-wrapper {
         background-color: $color-1;
-        border-top: 1px solid $color-3;
+        border-top: none;
         border-bottom: 1px solid $color-3;
         color: $gray-lightest;
         margin: 0;
@@ -15,7 +18,7 @@
         padding: 0;
 
         .header {
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0;
             margin-bottom: 20px;
             margin-top: 10px;
@@ -30,33 +33,65 @@
     }
 }
 
-.panel-list {
+.feature-nav {
     background-color: $color-3;
-    margin: 0;
     margin-bottom: 40px;
-    padding: 20px 0;
+    margin-top: -20px;
 
-    .panel-feature {
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        margin-bottom: 0;
+    .btn {
+        width: 100%;
+    }
 
-        .panel-heading {
-            background-color: $color-1;
-            border-color: $color-3;
-            border-radius: 4px;
+    & > .row {
+        background-color: $color-1;
+        color: $gray-lighter;
+        margin: 0;
+        padding: 0;
 
-            .panel-title {
-                font-size: 1.5em;
-                color: $gray-lightest;
-                text-align: center;
+        & > .feature-main {
+            font-family: $font-script;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+
+            p {
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
             }
         }
 
-        .content {
-
+        & > *:last-child {
+            background-color: $color-3;
+            border: 1px solid $color-3;
+            color: $gray-darker;
         }
+    }
+
+    .nav-pills {
+        font-family: $font-header;
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+        & > li {
+            float: none;
+        }
+
+        li,
+        a {
+            color: $color-1;
+        }
+
+        li:hover,
+        a:hover,
+        a:active {
+            color: $gray-darker;
+        }
+    }
+
+    .nav > li > a {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -71,4 +106,141 @@
 /* increase the font size of text block */
 .text-large {
     font-size: 2em;
+}
+
+.link-more {
+    font-family: $font-header;
+    font-size: 1.3em;
+    text-align: right;
+
+    a.btn {
+        display: inline-block;
+        font-size: 1.3em;
+        width: 100%;
+
+        .glyphicon {
+            float: right;
+        }
+    }
+}
+
+.map {
+    border: 1px solid $gray-lighter;
+    box-shadow: 1px 1px 5px $gray-normal;
+    float: right;
+    margin: 1em 0 1.5em;
+    max-width: 550px;
+    width: 100%;
+}
+
+dl.timeline {
+    background-color: $color-1;
+    font-size: 1.2em;
+    padding: 0;
+
+    dt,
+    dd {
+        border: none;
+        padding-top: 10px;
+    }
+
+    dt {
+        background-color: $color-1;
+        clear: left;
+        color: $gray-lightest;
+        float: left;
+        font-family: $font-header;
+        font-weight: 400;
+        padding-bottom: 10px;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: clip;
+        white-space: normal;
+        width: 60px;
+    }
+
+    dd {
+        background-color: $color-3;
+        color: $gray-darkest;
+        border-left: 2px solid $color-1;
+        margin-left: 60px;
+        padding-left: 10px;
+    }
+}
+
+.address {
+    background-color: $color-3;
+    border-left: 25px solid $color-1;
+    color: $gray-darkest;
+    max-width: 480px;
+    padding-left: 10px;
+}
+
+.place {
+    font-size: 1.3em;
+}
+
+.post {
+    footer {
+        font-size: .9em;
+        margin-top: 1.5px;
+    }
+}
+
+.btn.link-registry {
+    width: 100%;
+}
+
+.hashtag {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .page-section p img.pull-right {
+        margin-left: 20px;
+    }
+
+    dl.timeline {
+        margin: 20px;
+    }
+
+    .address {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .feature-nav {
+        & > .row {
+            & > * {
+                padding: 10px;
+            }
+
+            & > .feature-main {
+                padding-top: 12px;
+            }
+        }
+
+        .nav-pills > li {
+            float: left;
+        }
+
+        .nav > li > a {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .text-right-full {
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-nav {
+        .col-sm-4 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }

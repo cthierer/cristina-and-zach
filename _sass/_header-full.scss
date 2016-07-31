@@ -43,6 +43,14 @@
             color: $gray-darkest;
             background-color: $gray-lighter;
         }
+
+        .active {
+            background-color: $gray-lighter;
+
+            a {
+                color: $gray-darkest;
+            }
+        }
     }
 
     .title {
@@ -96,6 +104,29 @@
 @media (min-width: 768px) {
     .title-bar {
         text-align: center;
+
+        .nav-language {
+            left: 15px;
+            top: 0;
+            position: absolute;
+
+            a,
+            a:link,
+            a:visited {
+                background-color: $gray-lightest;
+                border: 1px solid $gray-normal;
+                border-radius: 2px;
+                color: $gray-darker;
+                margin-top: 17px;
+                padding: 5px 7px;
+            }
+
+            a:hover,
+            a:active {
+                background-color: $gray-lighter;
+                color: $gray-darkest;
+            }
+        }
     }
 }
 

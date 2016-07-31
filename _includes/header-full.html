@@ -1,12 +1,35 @@
+{% assign numNavLinks = site.data.navigation.main | size %}
+{% assign maxLinks = numNavLinks | divided_by: 2 | ceil %}
+{% assign numLinks = 0 %}
+{% assign lastIndex = 0 %}
+{% assign translated = "en" %}
+{% assign path = page.url | replace:"/es":"" %}
+{% if page.lang == "en" %}
+{% assign translated = "es" %}
+{% assign path = "/es" | append:page.url %}
+{% endif %}
+{% assign counterpart = site.pages | where:"lang",translated | where:"url",path %}
+{% assign numCounterparts = counterpart | size %}
 <div class="title-bar text-header">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 hidden-xs text-right">
                     <ul class="nav-list list-inline">
-                        {% for key in site.data.navigation.main limit:2 %}
+                        {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        {% if jekyll.environment == "development" or nav.published %}
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
+                            <a href="{{ nav.link[page.lang] }}">
+                                {{ nav.title[page.lang] }}
+                            </a>
+                        </li>
+                        {% assign numLinks = numLinks | plus: 1 %}
+                        {% if numLinks >= maxLinks %}
+                        {% assign lastIndex = forloop.index %}
+                        {% break %}
+                        {% endif %}
+                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -17,37 +40,65 @@
                             data-target="#main-nav"
                             aria-expanded="false">
                         <span class="sr-only">
-                            {{ site.data.contents.toggle-navigation }}
+                            {{ site.data.contents[page.lang].toggle-navigation }}
                         </span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <h1 class="title">
-                        <a href="{{ site.data.navigation.lookup.home.link }}"
-                                title="{{ site.data.navigation.lookup.home.title}}">
-                            <span class="name">{{ site.data.contents.her }}</span>
+                        <a href="{{ site.data.navigation.lookup.home.link[page.lang] }}"
+                                title="{{ site.data.navigation.lookup.home.title[page.lang] }}">
+                            <span class="name">{{ site.data.contents[page.lang].her }}</span>
                             <span class="ampersand">&amp;</span>
-                            <span class="name">{{ site.data.contents.him }}</span>
+                            <span class="name">{{ site.data.contents[page.lang].him }}</span>
                         </a>
                     </h1>
                 </div>
                 <div class="col-sm-4 hidden-xs text-left">
+                    {% if numLinks >= maxLinks %}
                     <ul class="nav-list list-inline">
-                        {% for key in site.data.navigation.main limit:2 offset:2 %}
+                        {% for key in site.data.navigation.main offset:lastIndex %}
                         {% assign nav = site.data.navigation.lookup[key] %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        {% if jekyll.environment == "development" or nav.published %}
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
+                            <a href="{{ nav.link[page.lang] }}">
+                                {{ nav.title[page.lang] }}
+                            </a>
+                        </li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
+                    {% endif %}
                 </div>
             </div>
+            {% if numCounterparts > 0 %}
+            <div class="nav-language hidden-xs">
+                <a class="nav-language" href="{{ counterpart[0].url }}">
+                    {{ site.data.contents[page.lang].language }}
+                </a>
+            </div>
+            {% endif %}
             <div class="visible-xs-block">
                 <div id="main-nav" class="collapse navabar-collapse">
                     <ul class="nav navbar-nav">
                         {% for key in site.data.navigation.main %}
                         {% assign nav = site.data.navigation.lookup[key] %}
-                        <li><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+                        {% if jekyll.environment == "development" or nav.published %}
+                        <li class="nav-{{ key }}{% if page.active-nav == key %} active{% endif %}">
+                            <a href="{{ nav.link[page.lang] }}">
+                                {{ nav.title[page.lang] }}
+                            </a>
+                        </li>
+                        {% endif %}
                         {% endfor %}
+                        {% if numCounterparts > 0 %}
+                        <li class="nav-language">
+                            <a href="{{ counterpart[0].url }}">
+                                {{ site.data.contents[page.lang].language }}
+                            </a>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>

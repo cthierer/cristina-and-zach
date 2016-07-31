@@ -1,6 +1,6 @@
 
 body {
-    background-color: $gray-darkest;
+    background-color: $color-1;
     color: $gray-darker;
     position: relavite;
 
@@ -64,4 +64,20 @@ h1, h2, h3, h4, h5, h6,
 
 .bg-gray-lightest {
     background-color: $gray-lightest;
+}
+
+.btn-default {
+
+    &,
+    &:link,
+    &:visited {
+        background-color: $color-1;
+        color: $gray-lighter;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $gray-lighter;
+        color: $gray-darker;
+    }
 }

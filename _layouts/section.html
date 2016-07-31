@@ -1,74 +1,71 @@
 ---
 layout: basic
 ---
-{% if page.feature-image %}
-<div class="feature-image" style="background-image: url('/assets/{{ page.feature-image }}');"></div>
+{% assign posts = site[page.articles] | where:"lang",page.lang | where:"published",true %}
+{% assign numPosts = posts | size %}
+{% assign numRows = numPosts | divided_by: 2 | ceil %}
+{% if page.theme %}
+<div class="feature-image {{page.theme}}"></div>
 {% endif %}
-<div class="row panel-list">
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Timeline</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
+{% if numPosts > 0 %}
+<div class="feature-nav">
+    <div class="row">
+        {% if page.feature-main %}
+        <div class="col-sm-4 feature-main">
+            {{ page.feature-main | markdownify }}
         </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Location</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="panel panel-default panel-feature">
-            <div class="panel-heading">
-                <h3 class="panel-title text-upper">Lodging</h3>
-            </div>
-            <div class="panel-body">
-                <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                </p>
-                <p>
-                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                     natoque penatibus et magnis dis parturient montes, nascetur
-                     ridiculus mus.
-                 </p>
-            </div>
+        {% endif %}
+        <div class="col-sm-{% if page.feature-main %}8{% else %}12{% endif %}">
+            <ul class="nav nav-pills">
+                {% for post in posts %}
+                <li role="presentation">
+                    <a href="#{{ post.url | replace:".html","" }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
-{% for post in site.categories[page.category] | reverse %}
-<article>
-    <header>
-        <h3 class="header">
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
-        </h3>
-    </header>
-    {{ post.excerpt }}
-</article>
-{% if forloop.last == false %}
-<hr />
 {% endif %}
+<div class="row">
+    <div class="col-sm-{% if page.aside %}9{% else %}12{% endif %}">
+        {{ content }}
+    </div>
+    {% if page.aside %}
+    <div class="col-sm-3">
+        <aside>
+            {% if page.aside.title %}
+            <header>
+                <h3 class="header">{{ page.aside.title }}</h3>
+            </header>
+            {% endif %}
+            {% if page.aside.body %}
+            {{ page.aside.body | markdownify }}
+            {% endif %}
+        </aside>
+    </div>
+    {% endif %}
+</div>
+<hr />
+{% for post in posts limit:2 %}
+<div class="row">
+    <div class="col-sm-12">
+        {% assign postId = post.url | replace:".html","" %}
+        {% include post.html post=post mirror=forloop.last id=postId %}
+    </div>
+</div>
+<hr />
+{% endfor %}
+{% for i in (1..numRows) %}
+{% assign offset = i | times:2 %}
+<div class="row two-col">
+    {% for post in posts limit:2 offset:offset %}
+    <div class="col-sm-{% if forloop.last && forloop.first %}12{% else %}6{% endif %}">
+        {% assign postId = post.url | replace:".html","" %}
+        {% include post.html post=post id=postId %}
+    </div>
+    <hr class="visible-xs-block" />
+    {% endfor %}
+</div>
+<hr class="hidden-xs" />
 {% endfor %}

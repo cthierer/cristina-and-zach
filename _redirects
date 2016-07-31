@@ -1,0 +1,6 @@
+---
+---
+{% if site.api %}
+# mount the API
+/api/*  {{ site.api }}/:splat  200
+{% endif %}

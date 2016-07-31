@@ -1,13 +1,31 @@
 # Site settings
-title: Cristina & Zachary
-baseurl: "/"
+baseurl: ""
 url: "https://www.bersteinwithlove.com"
+contact: "hello@bersteinwithlove.com"
+keys:
+    google-maps: AIzaSyDrD_iLTZozQ0COxNAWTCsSV7MloGaLDD8
+collections:
+    people:
+        output: false
+    our-story:
+        output: false
+    registries:
+        output: false
+    wedding:
+        output: false
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, README.md, Vagrantfile]
+include: [_redirects]
+gems:
+    - jekyll-sitemap
 
-# Site meta
-description: >
-    Event details, accomodation information, and registries for
-    Cristina Dalton's and Zachary Berstein's wedding on October 15, 2016.
+# Frontmatter defaults
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            lang: "en"

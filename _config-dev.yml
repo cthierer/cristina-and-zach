@@ -1,0 +1,4 @@
+# Site settings
+url: "https://dev.bersteinwithlove.com"
+unpublished: false
+api: "https://serene-spire-67138.herokuapp.com"

@@ -1,4 +1,23 @@
 ---
-layout: basic 
+layout: basic
 ---
+<ol class="breadcrumb">
+    <li>
+        {% assign home = site.data.navigation.lookup.home %}
+        <a href="{{ home.link[page.lang] }}">
+            {{ home.title[page.lang] }}
+        </a>
+    </li>
+    {% if page.active-nav %}
+    <li>
+        {% assign nav = site.data.navigation.lookup[page.active-nav] %}
+        <a href="{{ nav.link[page.lang] }}">
+            {{ nav.title[page.lang] }}
+        </a>
+    </li>
+    {% endif %}
+    <li class="active">
+        {{ page.title }}
+    </li>
+</ol>
 {{ content }}

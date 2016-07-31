@@ -1,17 +1,61 @@
 lookup:
     home:
-        title: Home
-        link: /
-    story:
-        title: Our story
-        link: /#
-    wedding-party:
-        title: Wedding party
-        link: /#
+        title:
+            en: Home
+            es: Casa
+        link:
+            en: /
+            es: /es/
+        published: true
+    our-story:
+        title:
+            en: Our story
+            es: Nuestra historia
+        link:
+            en: /our-story/
+            es: /es/our-story/
+        published: true
     big-day:
-        title: Big day
-        link: /big-day/
+        title:
+            en: Big day
+            es: Gran día
+        link:
+            en: /big-day/
+            es: /es/big-day/
+        published: true
     registry:
-        title: Registry
-        link: /#
+        title:
+            en: Registry
+            es: Registro
+        link:
+            en: /registry/
+            es: /es/registry/
+        published: true
+    share:
+        title:
+            en: Share memories
+            es: Comparta recuerdos
+        link:
+            en: /share/
+            es: /es/share/
+        published: false
+    accommodations:
+        title:
+            en: Accommodations
+            es: Accommodations
+        link:
+            en: /big-day/#/wedding/03-accommodations.html
+            es: /es/big-day/#/wedding/03-accommodations.html
+        published: false
 main:
+    - our-story
+    - big-day
+    - registry
+    - share
+footer:
+    - home
+    - our-story
+    - big-day
+    - accommodations
+    - registry
+    - share
