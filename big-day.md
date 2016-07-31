@@ -10,3 +10,6 @@ description: >
     wedding ceremony and reception on October 15, 2016.
 feature-main: <span class="countdown" data-date="2016-10-15">Saturday, October 15</span>
 ---
+Find details about the ceremony, reception, and accommodations for Cristina
+and Zachary's wedding.
+{: .lead }

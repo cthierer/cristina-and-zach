@@ -1,19 +1,22 @@
 ---
-title: Nearby attractions
+title: Frederick attractions
 lang: en
-published: false
+published: true
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at feugiat metus.
-Curabitur posuere venenatis leo, venenatis finibus felis rhoncus a. Curabitur
-varius molestie dui, vitae iaculis ante feugiat quis. Pellentesque mattis
-tortor vitae justo porttitor, nec egestas nisi suscipit. Curabitur non orci id
-elit cursus vehicula ac eu metus. Morbi sit amet augue iaculis, feugiat purus
-malesuada, gravida felis.
+While you're in Frederick for the weekend, check out some of these nearby
+activities:
 
-Aenean vulputate ante metus, sit amet sodales tortor tempor eu. In hendrerit
-sapien feugiat consectetur faucibus. Praesent a tempus orci, eu blandit lorem.
-Praesent ut vulputate quam, eget dictum quam.
+  * Take a tour of the **Flying Dog brewery**, available on Sunday at 12:30,
+    1:30, 2:30, and 3:30 PM. Reservations can be
+    [made online](http://flyingdogbrewery.com/landing-pages/tourreservations/#id=the-craft-beer-tour-of-flying-dog-brewery-frederick).
 
-Nunc tincidunt et est vel tristique. Nam pulvinar sit amet velit sit amet
-condimentum. Sed non metus justo. Nam ex augue, efficitur id laoreet at,
-vestibulum in libero. In semper sodales massa, ut pulvinar ipsum fringilla et.
+  * Enjoy Sunday brunch at **[Café Nola](http://www.cafe-nola.com)** from 9:00
+    AM - 2:30 PM.
+
+  * Walk around and visit the shops in
+    **[downtown Frederick](http://www.downtownfrederick.org)** and nearby
+    **Baker Park**.
+
+  * Hike **[SugarLoaf Mountain](http://www.sugarloafmd.com)**.
+
+  * Visit **[Linganore Winecellars](http://www.linganorewines.com)**.
