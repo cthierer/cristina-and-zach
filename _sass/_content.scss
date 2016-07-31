@@ -193,6 +193,25 @@ dl.timeline {
     font-weight: 700;
 }
 
+.wedding-party {
+    .person {
+        .name {
+            font-family: $font-script;
+            font-size: 2em;
+
+            .title {
+                font-family: $font-body;
+                font-size: .6em;
+            }
+        }
+    }
+
+    hr {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
+
 @media (min-width: 768px) {
     .page-section p img.pull-right {
         margin-left: 20px;
@@ -230,6 +249,16 @@ dl.timeline {
 
     .text-right-full {
         text-align: right;
+    }
+
+    .wedding-party {
+        .person .name {
+            margin-top: 70px;
+        }
+
+        .her .person {
+            text-align: right;
+        }
     }
 }
 

@@ -1,15 +1,15 @@
 <div class="row person">
-    <div class="col-xs-8 bio{% if include.mirror == 'true' %} col-sm-push-4{% endif %}">
+    <div class="col-xs-7 bio{% if include.mirror == 'true' %} col-sm-push-5{% endif %}">
         <h4 class="name">
             {{ include.name | escape }}
             {% if include.title %}
             <br/>
-            <small>{{ include.title | escape }}</small>
+            <small class="title">{{ include.title | escape }}</small>
             {% endif %}
         </h4>
         {{ include.bio | markdownify }}
     </div>
-    <div class="col-xs-4 photo{% if include.mirror == 'true' %} col-sm-pull-8{% endif %}">
-        <img class="img-circle img-responsive" src="/assets/{{ include.img }}" />
+    <div class="col-xs-5 photo{% if include.mirror == 'true' %} col-sm-pull-7{% endif %}">
+        <img class="img-rounded img-responsive" src="/assets/{{ include.img }}" />
     </div>
 </div>
