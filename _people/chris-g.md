@@ -1,5 +1,5 @@
 ---
-title: Chris Googin
+title: Chris Goggin
 lang: en
 role: Groomsman
 organization: groomsmen
