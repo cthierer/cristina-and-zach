@@ -1,7 +1,6 @@
 ---
 title: Viviana Dalton
-lang: en
-role: Maid of honor
+lang: es
 organization: bridesmaids
 avatar: people/viv_w.jpg
 ---

@@ -1,7 +1,6 @@
 ---
 title: Michael Rossberg
-lang: en
-role: Groomsman
+lang: es
 organization: groomsmen
 avatar: people/mike_w.jpg
 ---

@@ -1,7 +1,6 @@
 ---
 title: Christopher Thierer
-lang: en
-role: Groomsman
+lang: es
 organization: groomsmen
 avatar: people/chris_w.jpg
 ---

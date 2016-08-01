@@ -1,7 +1,6 @@
 ---
 title: Christopher Goggin
-lang: en
-role: Groomsman
+lang: es
 organization: groomsmen
 avatar: people/goggin_w.jpg
 ---

@@ -8,7 +8,6 @@ en:
     him: Zachary
     language: Español
     links: Links
-    more: More
     remaining: remaining
     share: Share
     tags:
@@ -19,17 +18,17 @@ en:
     toggle-navigation: Toggle navigation
 es:
     back-to-top: Back to top
+    bridesmaids: Damas que acompañarán a la novia
     day: day
     days: days
-    footer: Footer
+    groomsmen: Caballeros que acompañarán al el novio
     hello: Say hello!
     her: Cristina
     him: Zachary
     language: English
-    links: Links
-    more: Mas
+    links: Enlaces
     remaining: remaining
-    share: Share
+    share: Comparta
     tags:
         - "#BersteinWithLove"
         - "#BeautyAndTheBerstein"

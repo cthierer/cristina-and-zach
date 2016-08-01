@@ -1,7 +1,6 @@
 ---
 title: Jessica Berstein
-lang: en
-role: Bridesmaid
+lang: es
 organization: bridesmaids
 avatar: people/jess_w.jpg
 ---

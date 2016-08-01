@@ -1,8 +1,10 @@
 <div class="content-wrapper">
     <div class="container">
+        {% if site.data.contents[page.lang].footer %}
         <h2 class="sr-only">
             {{ site.data.contents[page.lang].footer }}
         </h2>
+        {% endif %}
         <div class="row">
             {% if site.data.contents[page.lang].blurb-footer %}
             <div class="col-sm-4">
