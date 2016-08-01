@@ -20,6 +20,8 @@ Chris. Cristina y Zach han estado juntos desde entonces.
 
 ### El compromiso de boda
 
+![Cristina y Zach a "Shenandoah National Park"](/assets/engagement_w.jpg){: .pull-right .img-rounded .hidden-xs width="280px" }
+
 Cristina y Zach fueron novios por 5 años antes de
 comprometerse. A Cristina le gusta planear sus días y siempre
 planea con semanas de anticipación. Por esa razón a Zach le
