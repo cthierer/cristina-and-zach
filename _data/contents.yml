@@ -1,5 +1,6 @@
 en:
     back-to-top: Back to top
+    countdown-format: "<%= count %> <%= days %> <%= remaining %>"
     day: day
     days: days
     footer: Footer
@@ -17,12 +18,13 @@ en:
     title: Cristina & Zachary's wedding website
     toggle-navigation: Toggle navigation
 es:
-    back-to-top: Back to top
+    back-to-top: Volver arriba
     bridesmaids: Damas que acompañarán a la novia
-    day: day
-    days: days
+    countdown-format: "<%= remaining %> <%= count %> <%= days %>"
+    day: día
+    days: días
     groomsmen: Caballeros que acompañarán al el novio
-    hello: Say hello!
+    hello: ¡Diga hola!
     her: Cristina
     him: Zachary
     language: English
