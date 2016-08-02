@@ -1,6 +1,6 @@
 en:
     back-to-top: Back to top
-    countdown-format: "<%= count %> <%= days %> <%= remaining %>"
+    countdown-format: "{{ count }} {{ days }} {{ remaining }}"
     day: day
     days: days
     footer: Footer
@@ -20,7 +20,7 @@ en:
 es:
     back-to-top: Volver arriba
     bridesmaids: Damas que acompañarán a la novia
-    countdown-format: "<%= remaining %> <%= count %> <%= days %>"
+    countdown-format: "{{ remaining }} {{ count }} {{ days }}"
     day: día
     days: días
     groomsmen: Caballeros que acompañarán al el novio
@@ -29,7 +29,7 @@ es:
     him: Zachary
     language: English
     links: Enlaces
-    remaining: remaining
+    remaining: faltan
     share: Comparta
     tags:
         - "#BersteinWithLove"
