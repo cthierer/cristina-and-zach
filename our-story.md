@@ -6,7 +6,7 @@ theme: background-photo-3
 published: true
 active-nav: our-story
 description: >
-    The story of how Cristina and Zachary met and fell for eachother, and
+    The story of how Cristina and Zachary met, their engagement, and
     the people who will be at their sides on their wedding day.
 ---
 It all started when Cristina and Zach briefly met at Chris's house one summer
