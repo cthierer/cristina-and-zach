@@ -26,4 +26,5 @@ Book by **September 16** for special block pricing. To book a room:
      use the code _DBWOC_.
 
 There will be a shuttle to take guests to and from the reception at Musket
-Ridge.
+Ridge. The shuttle will depart from the Hilton Garden Inn at **4:45 PM**.
+Further details about the shuttle will be provided upon check-in at the hotel.
