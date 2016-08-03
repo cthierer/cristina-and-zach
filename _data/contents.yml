@@ -1,5 +1,10 @@
 en:
     back-to-top: Back to top
+    blurb-footer: |
+        &copy; 2016 Cristina & Zachary Berstein
+
+        The engagement photos featured on this site were done by
+        [Dani Leigh](http://danileighphotography.com).
     countdown-format: "{{ count }} {{ days }} {{ remaining }}"
     day: day
     days: days
@@ -19,6 +24,8 @@ en:
     toggle-navigation: Toggle navigation
 es:
     back-to-top: Volver arriba
+    blurb-footer: |
+        &copy; 2016 Cristina & Zachary Berstein
     bridesmaids: Damas que acompañarán a la novia
     countdown-format: "{{ remaining }} {{ count }} {{ days }}"
     day: día
