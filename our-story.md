@@ -19,7 +19,7 @@ phone. Cristina and Zach started dating that year, and the rest is history!
 
 ### The proposal
 
-![Cristina and Zach at Shenandoah National Park](/assets/engagement_w.jpg){: .pull-right .img-rounded width="280px" }
+![Cristina and Zach at Shenandoah National Park](/assets/engagement_w.jpg){: .pull-right .img-rounded .hidden-xs width="280px" }
 
 Cristina and Zach had been dating five years before the proposal. Cristina is
 very much a planner, and routinely planned out her weeks in advance, making

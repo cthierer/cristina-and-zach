@@ -2,7 +2,7 @@ lookup:
     home:
         title:
             en: Home
-            es: Casa
+            es: Página de inicio
         link:
             en: /
             es: /es/
@@ -18,7 +18,7 @@ lookup:
     big-day:
         title:
             en: Big day
-            es: Gran día
+            es: El gran día
         link:
             en: /big-day/
             es: /es/big-day/
@@ -26,7 +26,7 @@ lookup:
     registry:
         title:
             en: Registry
-            es: Registro
+            es: Registro de regalos
         link:
             en: /registry/
             es: /es/registry/

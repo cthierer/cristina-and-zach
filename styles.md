@@ -1,6 +1,7 @@
 ---
 title: Styles
 layout: basic
+published: false
 description: >
     Development style guide for the Cristina and Zachary's wedding website.
 ---

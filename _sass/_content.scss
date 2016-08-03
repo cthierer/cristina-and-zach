@@ -1,8 +1,6 @@
-p {
-    font-size: 16px;
-}
 
 .page-section {
+    font-size: 16px;
 
     p {
         line-height: 1.8em;
@@ -28,8 +26,8 @@ p {
     }
 
     hr {
-        margin-top: 3em;
-        margin-bottom: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 }
 
@@ -70,7 +68,6 @@ p {
 
     .nav-pills {
         font-family: $font-header;
-        font-size: 1.2em;
         text-transform: uppercase;
 
         & > li {
@@ -196,6 +193,29 @@ dl.timeline {
     font-weight: 700;
 }
 
+.wedding-party {
+    .header {
+        margin-bottom: 35px;
+    }
+
+    .person {
+        .name {
+            font-family: $font-script;
+            font-size: 2em;
+
+            .title {
+                font-family: $font-body;
+                font-size: .6em;
+            }
+        }
+    }
+
+    hr {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
+
 @media (min-width: 768px) {
     .page-section p img.pull-right {
         margin-left: 20px;
@@ -217,7 +237,7 @@ dl.timeline {
             }
 
             & > .feature-main {
-                padding-top: 12px;
+                padding-top: 11px;
             }
         }
 
@@ -233,6 +253,16 @@ dl.timeline {
 
     .text-right-full {
         text-align: right;
+    }
+
+    .wedding-party {
+        .person .name {
+            margin-top: 10%;
+        }
+
+        .her .person {
+            text-align: right;
+        }
     }
 }
 

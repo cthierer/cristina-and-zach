@@ -1,33 +1,45 @@
 ---
-title: Our story
+title: Nuestra historia
 lang: es
 layout: section
 articles: our-story
 theme: background-photo-3
-published: false
+published: true
 active-nav: our-story
-description: >
-    The story of how Cristina and Zachary met and fell for eachother, and
-    the people who will be at their sides on their wedding day.
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
-pellentesque nisl, vitae euismod sapien varius et. In eu posuere lacus, eget
-dignissim nibh. Pellentesque dictum leo leo, a ultrices odio bibendum et. Sed
-fringilla, tortor at bibendum placerat, felis elit feugiat nunc, ac congue
-libero eros at magna. In sapien massa, egestas nec libero convallis, vestibulum
-mollis orci. Sed porta ipsum id lorem tempor interdum. Praesent vel dolor id ex
-efficitur bibendum quis eget sem. Fusce magna quam, accumsan et tristique in,
-consectetur sed velit. Praesent et ornare massa.
+Todo empezó cuando Cristina y Zach se conocieron en la casa de
+Chris durante las vacaciones de verano 2010.
+{: .lead }
 
-Sed sed accumsan lacus, at pretium nibh. Nam pellentesque eget nibh in
-elementum. Nam ut efficitur enim. Mauris mattis at elit id vehicula. Lorem
-ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum mi erat,
-ut sollicitudin dui efficitur vitae. Donec eu nibh in erat suscipit fringilla.
-Praesent vitae ipsum rhoncus, dapibus nunc nec, auctor erat.
+Cristina estudió en
+UMBC con Chris, y Zach estudió en la Universidad de Maryland.
+Ese año, Zach buscaba cualquier exscusa para visitar a Chris en
+UMBC (siempre decía que su computadora no estaba funcionando) y
+Cristina encontraba razones para llamar a Zach del teléfono de
+Chris. Cristina y Zach han estado juntos desde entonces.
 
-Aenean neque neque, porta a mauris vel, aliquet elementum orci. Nulla faucibus,
-lorem ut commodo dictum, sem ex auctor mauris, at scelerisque odio dui nec
-mauris. Etiam vitae aliquam quam. Vivamus lectus elit, consequat sit amet dui
-in, malesuada sollicitudin leo. Nulla viverra euismod diam, sit amet molestie
-leo suscipit quis. Ut eu iaculis ligula. Donec tincidunt tellus leo, ut feugiat
-lacus bibendum ac. In vulputate urna vel posuere gravida.
+### El compromiso de boda
+
+![Cristina y Zach a "Shenandoah National Park"](/assets/engagement_w.jpg){: .pull-right .img-rounded .hidden-xs width="280px" }
+
+Cristina y Zach fueron novios por 5 años antes de
+comprometerse. A Cristina le gusta planear sus días y siempre
+planea con semanas de anticipación. Por esa razón a Zach le
+costó mucho trabajo sorprenderla, pero vió la oportunidad
+perfecta cuando ella quería tomar un día libre de trabajo para
+hacer algo divertido y relajarse.
+
+El 13 de mayo, 2015, Cristina y Zach madrugaron y se fueron al
+parque Skyline Drive en Virginia. Zach estaba seguro que este
+lugar era uno de sus favoritos porque ella y su familia iban
+cada año. Cristina y Zach escalaron una montaña hasta llegar a
+una parte con una vista preciosa de las montañas. Almorzaron y
+ahí fue donde Zach le preguntó a Cristina si quería casarse
+con él.  
+
+No fue un compromiso elegante como se ve en las películas,
+pero fue el compromiso perfecto para ellos. Los dos estaban
+tán emocionados que no recuerdan todos los detalles.
+
+Cristina y Zach están muy ilusionados por iniciar la próxima
+étapa de sus vidas juntos.

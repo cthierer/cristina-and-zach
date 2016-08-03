@@ -1,13 +1,11 @@
 ---
-title: Gift registry
+title: Registro de regalos
 lang: es
 layout: section-index
 theme: background-photo-4
-published: false
+published: true
 active-nav: registry
 articles: registries
-description: >
-    Links to Cristina and Zachary's wedding registries.
 ---
-Cristina and Zachary are registered at _Crate & Barrel_ and _Macy's_.
+Zach y Cristina están registrados en _Crate&Barrel_ y _Macy's_.
 {: .lead}

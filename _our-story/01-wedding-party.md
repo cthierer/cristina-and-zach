@@ -1,10 +1,10 @@
 ---
 title: Wedding party
 lang: en
-published: false
+published: true
 ---
-{% assign bridesmaids = site.people | where:"organization","bridesmaids" %}
-{% assign groomsmen = site.people | where:"organization","groomsmen" %}
+{% assign bridesmaids = site.people | where:"organization","bridesmaids" | where:"lang",page.lang %}
+{% assign groomsmen = site.people | where:"organization","groomsmen" | where:"lang",page.lang %}
 <div class="row wedding-party">
     <div class="col-sm-6 her">
         {% for person in bridesmaids %}
