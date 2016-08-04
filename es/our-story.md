@@ -13,7 +13,7 @@ Chris durante las vacaciones de verano 2010.
 
 Cristina estudió en
 UMBC con Chris, y Zach estudió en la Universidad de Maryland.
-Ese año, Zach buscaba cualquier exscusa para visitar a Chris en
+Ese año, Zach buscaba cualquier excusa para visitar a Chris en
 UMBC (siempre decía que su computadora no estaba funcionando) y
 Cristina encontraba razones para llamar a Zach del teléfono de
 Chris. Cristina y Zach han estado juntos desde entonces.
