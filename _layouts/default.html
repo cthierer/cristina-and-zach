@@ -22,7 +22,6 @@
     {% endif %}
     <meta name="dcterms.issued" scheme="dcterms.w3cdtf" content="{{ site.time | date: "%Y-%m-%d"' }}">
 
-
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='/lib/css/fonts.css' rel='stylesheet' type='text/css'>
     <link href="/css/main.css" rel="stylesheet">
@@ -30,6 +29,7 @@
 
     <script src="/lib/js/jquery-2.2.0.min.js"></script>
     <script src="/lib/js/bootstrap.min.js"></script>
+    <script src="/lib/js/riot+compiler.min.js"></script>
   </head>
   <body lang="{{ page.lang }}">
     <div class="content-wrapper">
@@ -43,49 +43,9 @@
             {% include footer-basic.html %}
         </footer>
     </div>
+    <script src="/app/tags.js" type="riot/tag"></script>
     <script type="text/javascript">
-    /**
-     * @module com.christhierer.dev.page.countdown
-     * Replaces coutndown blocks with countdowns to specified dates.
-     */
-    $(function () {
-        /**
-         * @constant
-         * @type {object}
-         * Lookup object of terms used in the countdown.
-         */
-        const content = {
-            template: "{{ site.data.contents[page.lang].countdown-format }}",
-            day: "{{ site.data.contents[page.lang].day }}",
-            days: "{{ site.data.contents[page.lang].days }}",
-            remaining: "{{ site.data.contents[page.lang].remaining }}"
-        };
-
-        var countdowns = $('.countdown');
-        var render = (function () {
-            const template = content.template.replace(/\{\{ remaining \}\}/, content.remaining);
-            return function (daysRemaining) {
-                var days = (daysRemaining < 2) ? content.day : content.days;
-                return template.replace(/\{\{ days \}\}/, days).replace(/\{\{ count \}\}/, daysRemaining);
-            }
-        })();
-
-        // iterate over each countdown block
-        // calculate the number of days, and update
-        for (var i = 0; i < countdowns.length; i++) {
-            var countdown = $(countdowns[i]),
-                template = content.template,
-                date = Date.parse(countdown.data('date')),
-                today = new Date(),
-                diff = Math.ceil((date - today) / 86400000);
-
-            if (diff > 0) {
-                countdown.empty().append(render(diff));
-            }
-
-            // if negative number of days, do nothing
-        }
-    });
+      riot.mount("*")
     </script>
   </body>
 </html>

@@ -5,7 +5,7 @@ en:
 
         The engagement photos featured on this site were done by
         [Dani Leigh](http://danileighphotography.com).
-    countdown-format: "{{ count }} {{ days }} {{ remaining }}"
+    countdown-format: "{{ count }} {{ days }} remaining"
     day: day
     days: days
     footer: Footer
@@ -27,7 +27,7 @@ es:
     blurb-footer: |
         &copy; 2016 Cristina & Zachary Berstein
     bridesmaids: Damas que acompañarán a la novia
-    countdown-format: "{{ remaining }} {{ count }} {{ days }}"
+    countdown-format: "faltan {{ count }} {{ days }}"
     day: día
     days: días
     groomsmen: Caballeros que acompañarán al el novio
