@@ -30,6 +30,7 @@
     <script src="/lib/js/jquery-2.2.0.min.js"></script>
     <script src="/lib/js/bootstrap.min.js"></script>
     <script src="/lib/js/riot+compiler.min.js"></script>
+    <script src="/app/tags.js" type="riot/tag"></script>
   </head>
   <body lang="{{ page.lang }}">
     <div class="content-wrapper">
@@ -43,9 +44,8 @@
             {% include footer-basic.html %}
         </footer>
     </div>
-    <script src="/app/tags.js" type="riot/tag"></script>
     <script type="text/javascript">
-      riot.mount("*")
+      riot.mount("cz-countdown")
     </script>
   </body>
 </html>

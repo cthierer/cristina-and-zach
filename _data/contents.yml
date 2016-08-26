@@ -9,6 +9,19 @@ en:
     day: day
     days: days
     footer: Footer
+    guestbook:
+        contact-information: Contact information
+        leave-a-message: Leave a message
+        label-email: E-mail
+        label-message: Message
+        label-message-help: Enter up to 5,000 characters
+        label-name: Name
+        label-submit: Submit
+        please-wait: Please wait...
+        submit-error: There was a problem submitting your post; please try again.
+        submit-success: Your post has been submitted!
+        validation-required: "{{ fieldname }} is required"
+        validation-email: "{{ fieldname }} must be a valid e-mail address"
     hello: Say hello!
     her: Cristina
     him: Zachary
