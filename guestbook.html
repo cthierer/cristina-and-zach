@@ -3,21 +3,10 @@ title: Guestbook
 layout: feature
 ---
 
-<h2>
-    Sign the guestbook
-</h2>
-<p class="lead">
-    Leave a personal message for the happy couple.
-</p>
-
-<cz-guestbook-form></cz-guestbook-form>
-
-<h2>
-    See what others have said
-</h2>
+<cz-guestbook></cz-guestbook>
 
 <script type="text/javascript">
-    riot.mount('cz-guestbook-form', {
+    riot.mount('cz-guestbook', {
         t: {{ site.data.contents[page.lang].guestbook | jsonify }}
     })
 </script>

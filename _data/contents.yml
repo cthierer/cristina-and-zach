@@ -10,14 +10,21 @@ en:
     days: days
     footer: Footer
     guestbook:
+        author-says: says:
         contact-information: Contact information
+        lead-sign: Leave a personal message for the happy couple.
         leave-a-message: Leave a message
         label-email: E-mail
         label-message: Message
         label-message-help: Enter up to 5,000 characters
         label-name: Name
         label-submit: Submit
+        loading: Loading...
+        loading-error: Whoops! There was a problem loading the guestbook.
+        header-sign: Sign the guestbook
+        header-view: See what others have said
         please-wait: Please wait...
+        show-more: More
         submit-error: There was a problem submitting your post; please try again.
         submit-success: Your post has been submitted!
         validation-required: "{{ fieldname }} is required"
